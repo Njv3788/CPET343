@@ -5,8 +5,8 @@
 library ieee;
 use ieee.std_logic_1164.all;      -- gives you the std_logic type
 
-entity full_adder_single_bit_beh_tb is 
-end full_adder_single_bit_beh_tb;
+entity full_adder_single_bit_str_tb is 
+end full_adder_single_bit_str_tb;
 
 architecture arch of full_adder_single_bit_str_tb is
 
