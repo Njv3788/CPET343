@@ -20,5 +20,5 @@ end full_adder_single_bit_str;
 architecture str of full_adder_single_bit_str is
 begin 
   cout <= ((a xor b) xor cin);                 -- carry out 
-  s    <= ((a and b) or ((a xor b) and cin));  -- sum bit 
+  sum  <= ((a and b) or ((a xor b) and cin));  -- sum bit 
 end str;
