@@ -41,12 +41,16 @@ end component;
 
 component seven_sign is
   port (
-    clk             : in std_logic; 
-    reset           : in std_logic;
-    bcd             : in std_logic_vector(3 downto 0);
+    clk             : in  std_logic; 
+    reset           : in  std_logic;
+    bcd             : in  std_logic_vector(3 downto 0);
     seven_seg_out   : out std_logic_vector(6 downto 0)
   );  
-end component;  
+end component; 
+
+signal sum          : std_logic_vector(3 downto 0);
+signal sum_sig      : std_logic_vector(3 downto 0);
+signal enable       : std_logic;
 
 begin
 
@@ -57,7 +61,7 @@ counter: generic_counter
   port map(
     clk       => clk,
     reset     => reset,
-    output    => output
+    output    => enable
   );
   
 adder: generic_adder_beh
@@ -65,18 +69,18 @@ adder: generic_adder_beh
     bits => 4
   )
   port map(
-    a        =>
-    b        =>
-    cin      =>
-    sum      =>
+    a        => sum_sig,
+    b        => '0001',
+    cin      => '0000'
+    sum      => sum,
     cout     =>
   );         
   
 bcd: seven_sign
   port map(
-    clk           =>
-    reset         =>
-    bcd           =>
-    seven_seg_out =>
+    clk           => clk,
+    reset         => reset,
+    bcd           => sum_sig,
+    seven_seg_out => output
   );         
 end beh;
