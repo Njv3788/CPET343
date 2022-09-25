@@ -1,0 +1,98 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/ravvenLabs/websiteLinks/hdl/four_paradigms/sim/script
+T_opt
+!s110 1661957277
+VAXm4oO89Ydejh2F`d8G<o1
+04 17 4 work four_paradigms_tb arch 1
+=1-a87eeaa8187b-630f749c-3d4-4118
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+Efour_paradigms
+Z1 w1661947946
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z4 8../../src/four_paradigms.vhd
+Z5 F../../src/four_paradigms.vhd
+l0
+L8
+V0efk]2:X`_a2o2mQ2`z9F2
+!s100 eC3NX34nUi]O:jTfcKP>_1
+Z6 OL;C;2019.2;69
+31
+Z7 !s110 1661957275
+!i10b 1
+Z8 !s108 1661957275.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|../../src/four_paradigms.vhd|
+Z10 !s107 ../../src/four_paradigms.vhd|
+!i113 0
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abeh
+R2
+R3
+DEx4 work 14 four_paradigms 0 22 0efk]2:X`_a2o2mQ2`z9F2
+l22
+L20
+V95iMc?R:h3bjNcUM0<TYz2
+!s100 86@LZe8]<KYnL<g^g;>Ch3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Efour_paradigms_tb
+Z13 w1661948099
+R2
+R3
+R0
+Z14 8../src/four_paradigms_tb.vhd
+Z15 F../src/four_paradigms_tb.vhd
+l0
+L8
+V2TN:4UaKE@dhkUb`dTQJm0
+!s100 Q:je7OSFoEMY8fZVK@TNT1
+R6
+31
+Z16 !s110 1661957276
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|../src/four_paradigms_tb.vhd|
+Z18 !s107 ../src/four_paradigms_tb.vhd|
+!i113 0
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 17 four_paradigms_tb 0 22 2TN:4UaKE@dhkUb`dTQJm0
+l34
+L11
+VA<`LKF4G7C6iUgH64P_N:1
+!s100 ?5f8A3^ZPbWZUgg_i:fUF0
+R6
+31
+R16
+!i10b 1
+R8
+R17
+R18
+!i113 0
+R11
+R12

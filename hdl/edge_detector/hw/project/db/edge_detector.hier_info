@@ -1,0 +1,10 @@
+|edge_detector
+clk => prev_input.CLK
+clk => edge~reg0.CLK
+reset => edge~reg0.ACLR
+reset => prev_input.ENA
+input => edge.IN1
+input => prev_input.DATAIN
+edge <= edge~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
