@@ -47,10 +47,11 @@ architecture beh of top is
     );  
   end component; 
 
-  signal sum          : std_logic_vector(5 downto 0);
+  signal sum          : std_logic_vector(4 downto 0);
   signal sum_sig      : std_logic_vector(3 downto 0);
   signal enable       : std_logic;
 begin
+
   process(clk,reset)
     begin
       if (reset = '1') then 
@@ -79,7 +80,7 @@ begin
     port map(
       a        => sum_sig,
       b        => "0001",
-      cin      => "0000",
+      cin      => '0',
       sum      => sum(3 downto 0),
       cout     => sum(4)
     );         
