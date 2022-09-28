@@ -1,0 +1,219 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dS:/Documents/CPET343/lab3/toPost/counter/sim/script
+T_opt
+Z1 !s110 1664224382
+VSKSal@=8cI7DOlFH=XmN20
+04 6 4 work top_tb arch 1
+=1-b07b2521adcc-63320c7e-161-4830
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+Egeneric_adder_beh
+Z2 w1664138813
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z6 8../../src/generic_adder_beh.vhd
+Z7 F../../src/generic_adder_beh.vhd
+l0
+L9
+VZM:m22W6n_OU0[flII;@<2
+!s100 OOaH7j]OJo2FNLlk`2n1j2
+Z8 OL;C;2019.2;69
+31
+Z9 !s110 1664224381
+!i10b 1
+Z10 !s108 1664224381.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|../../src/generic_adder_beh.vhd|
+Z12 !s107 ../../src/generic_adder_beh.vhd|
+!i113 0
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abeh
+R3
+R4
+R5
+DEx4 work 17 generic_adder_beh 0 22 ZM:m22W6n_OU0[flII;@<2
+l27
+L22
+VP]9?mhS67Maj[OY3<NQz[0
+!s100 mMQOf5?^HUVg5SK;UcB_H1
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Egeneric_counter
+Z15 w1664132854
+R4
+R5
+R0
+Z16 8../../src/generic_counter.vhd
+Z17 F../../src/generic_counter.vhd
+l0
+L8
+V^`<KMAE]`_5EGCAHV]bZ72
+!s100 b;7GBWdQ5cL8<UCk3lILB1
+R8
+31
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|../../src/generic_counter.vhd|
+Z19 !s107 ../../src/generic_counter.vhd|
+!i113 0
+R13
+R14
+Abeh
+R4
+R5
+DEx4 work 15 generic_counter 0 22 ^`<KMAE]`_5EGCAHV]bZ72
+l23
+L19
+VTT:M88V=lJ62fz0cSYdIR0
+!s100 z5ik>DVc6W0?c7LPT5hG52
+R8
+31
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 0
+R13
+R14
+Eseven_seg
+Z20 w1664222297
+R4
+R5
+R0
+Z21 8../../src/seven_seg/src/seven_seg.vhd
+Z22 F../../src/seven_seg/src/seven_seg.vhd
+l0
+L8
+V>gz;8C[Kom88YPngL@[R70
+!s100 lKTd95kbgLl6@?Aog=ebV2
+R8
+31
+R9
+!i10b 1
+R10
+Z23 !s90 -reportprogress|300|-93|-work|work|../../src/seven_seg/src/seven_seg.vhd|
+Z24 !s107 ../../src/seven_seg/src/seven_seg.vhd|
+!i113 0
+R13
+R14
+Abeh
+R4
+R5
+DEx4 work 9 seven_seg 0 22 >gz;8C[Kom88YPngL@[R70
+l18
+L17
+VHRigY?d?mbVDmn@Fmg4ei0
+!s100 n0::5d3[Fddod9?MUJKPY3
+R8
+31
+R9
+!i10b 1
+R10
+R23
+R24
+!i113 0
+R13
+R14
+Etop
+Z25 w1664224360
+R4
+R5
+R0
+Z26 8../../src/top.vhd
+Z27 F../../src/top.vhd
+l0
+L8
+Vf<3kXX9abeg?a>Q;XkSlB1
+!s100 FXacmkE7Ll]DRA=4B=gIJ1
+R8
+31
+R9
+!i10b 1
+R10
+Z28 !s90 -reportprogress|300|-93|-work|work|../../src/top.vhd|
+Z29 !s107 ../../src/top.vhd|
+!i113 0
+R13
+R14
+Abeh
+R4
+R5
+DEx4 work 3 top 0 22 f<3kXX9abeg?a>Q;XkSlB1
+l55
+L16
+VDPeOz[^3=Nk`R2lR<Dz<91
+!s100 ^fa[Enl<hC2RSYVf_NRlU3
+R8
+31
+R9
+!i10b 1
+R10
+R28
+R29
+!i113 0
+R13
+R14
+Etop_tb
+Z30 w1664140232
+R3
+R4
+R5
+R0
+Z31 8../src/top_tb.vhd
+Z32 F../src/top_tb.vhd
+l0
+L9
+VM6P>KAQL:9Yd4F3<_o3N>3
+!s100 Nl7`J1g3O:T=2WJ[N_5gj3
+R8
+31
+R1
+!i10b 1
+Z33 !s108 1664224382.000000
+Z34 !s90 -reportprogress|300|-93|-work|work|../src/top_tb.vhd|
+Z35 !s107 ../src/top_tb.vhd|
+!i113 0
+R13
+R14
+Aarch
+R3
+R4
+R5
+DEx4 work 6 top_tb 0 22 M6P>KAQL:9Yd4F3<_o3N>3
+l28
+L12
+VOX?IgU]PMQh=I3U4Q_Mb60
+!s100 KHF;GChbW@B`gQ[<kG:Pg0
+R8
+31
+R1
+!i10b 1
+R33
+R34
+R35
+!i113 0
+R13
+R14

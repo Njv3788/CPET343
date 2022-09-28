@@ -24,6 +24,7 @@ constant period     : time := 20ns;
 signal clk          : std_logic := '0';
 signal reset        : std_logic := '1';
 
+
 begin
 
 -- clock process
@@ -41,7 +42,6 @@ async_reset: process
     wait;
 end process; 
 
--- uut display  
 uut: top  
   port map(        
     clk            => clk,
