@@ -21,6 +21,7 @@ radix define States {
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /top_tb/uut/clk
 add wave -noupdate /top_tb/uut/reset
+add wave -noupdate /top_tb/uut/add
 add wave -noupdate -radix States /top_tb/uut/seven_seg_out
 add wave -noupdate -radix Decimal /top_tb/uut/bcd
 add wave -noupdate /top_tb/a_tb

@@ -10,171 +10,171 @@ z2
 cModel Technology
 Z0 dS:/Documents/CPET343/Lab4/toPost/sim/script
 T_opt
-!s110 1664400297
-VzQc230>UKJi<_QHzd`mBo2
+Z1 !s110 1664814995
+VW0ZG9K8?0R:elgX;NK6@m3
 04 6 4 work top_tb arch 1
-=1-b07b2521acf5-6334bba8-34c-25c8
+=1-b07b251b031b-633b0f93-157-2f2c
 o-quiet -auto_acc_if_foreign -work work +acc
 tCvgOpt 0
 n@_opt
 OL;O;2019.2;69
 Egeneric_add_sub
-Z1 w1664400284
-Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z2 w1664814972
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 R0
-Z5 8../../src/generic_add_sub.vhd
-Z6 F../../src/generic_add_sub.vhd
+Z6 8../../src/generic_add_sub.vhd
+Z7 F../../src/generic_add_sub.vhd
 l0
 L9
 VRMln`mEzH:T@gYbb_69HY2
 !s100 ;gW>DciQ272n23c3QjAdz3
-Z7 OL;C;2019.2;69
+Z8 OL;C;2019.2;69
 31
-Z8 !s110 1664400296
+Z9 !s110 1664814994
 !i10b 1
-Z9 !s108 1664400296.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|../../src/generic_add_sub.vhd|
-Z11 !s107 ../../src/generic_add_sub.vhd|
+Z10 !s108 1664814994.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|../../src/generic_add_sub.vhd|
+Z12 !s107 ../../src/generic_add_sub.vhd|
 !i113 0
-Z12 o-93 -work work
-Z13 tExplicit 1 CvgOpt 0
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
 Abeh
-R2
 R3
 R4
+R5
 DEx4 work 15 generic_add_sub 0 22 RMln`mEzH:T@gYbb_69HY2
 l28
 L23
-VF[Rf5=oF3JhW5l;@IYkfU2
-!s100 OL7FQnMhYg=jK54^PECEB3
-R7
-31
+Vi7mfommR<V:]QWA[RB[jV1
+!s100 GBYJikjN2?3dSINY9j_@i0
 R8
-!i10b 1
+31
 R9
+!i10b 1
 R10
 R11
-!i113 0
 R12
+!i113 0
 R13
+R14
 Eseven_seg
-Z14 w1664228023
-R3
+Z15 w1664408171
 R4
+R5
 R0
-Z15 8../../src/seven_seg/src/seven_seg.vhd
-Z16 F../../src/seven_seg/src/seven_seg.vhd
+Z16 8../../src/seven_seg/src/seven_seg.vhd
+Z17 F../../src/seven_seg/src/seven_seg.vhd
 l0
 L8
 V>gz;8C[Kom88YPngL@[R70
 !s100 lKTd95kbgLl6@?Aog=ebV2
-R7
-31
 R8
-!i10b 1
+31
 R9
-Z17 !s90 -reportprogress|300|-93|-work|work|../../src/seven_seg/src/seven_seg.vhd|
-Z18 !s107 ../../src/seven_seg/src/seven_seg.vhd|
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|../../src/seven_seg/src/seven_seg.vhd|
+Z19 !s107 ../../src/seven_seg/src/seven_seg.vhd|
 !i113 0
-R12
 R13
+R14
 Abeh
-R3
 R4
+R5
 DEx4 work 9 seven_seg 0 22 >gz;8C[Kom88YPngL@[R70
 l18
 L17
 V<VUSzFLMYWQ17:jneD7Tb2
 !s100 8d5JSYz;;02BSj:<E<bJe3
-R7
-31
 R8
-!i10b 1
+31
 R9
-R17
+!i10b 1
+R10
 R18
+R19
 !i113 0
-R12
 R13
+R14
 Etop
-Z19 w1664400010
-R3
+Z20 w1664813748
 R4
+R5
 R0
-Z20 8../../src/top.vhd
-Z21 F../../src/top.vhd
+Z21 8../../src/top.vhd
+Z22 F../../src/top.vhd
 l0
 L8
-V;e=f3C>:]k4HRoRgeHS_g0
-!s100 2RB2>khY[;=P:21k11@E[0
-R7
+VInhmB;YG>Rc=1RAf=j]E20
+!s100 ji@0F:iNjLHXdbR?N[N_c2
+R8
 31
-Z22 !s110 1664400295
+R9
 !i10b 1
-Z23 !s108 1664400295.000000
-Z24 !s90 -reportprogress|300|-93|-work|work|../../src/top.vhd|
-Z25 !s107 ../../src/top.vhd|
+R10
+Z23 !s90 -reportprogress|300|-93|-work|work|../../src/top.vhd|
+Z24 !s107 ../../src/top.vhd|
 !i113 0
-R12
 R13
+R14
 Abeh
-R3
 R4
-DEx4 work 3 top 0 22 ;e=f3C>:]k4HRoRgeHS_g0
-l45
-L18
-V1GXe0Ro6QQdYX0nG^Ugn72
-!s100 3JbhAin7K@dOLOm9ZB1bS3
-R7
+R5
+DEx4 work 3 top 0 22 InhmB;YG>Rc=1RAf=j]E20
+l46
+L19
+VKzQg6eZ:oSDMeo><SlfFH2
+!s100 LBg2DlY5@LHj;6A[:cVS62
+R8
 31
-R22
+R9
 !i10b 1
+R10
 R23
 R24
-R25
 !i113 0
-R12
 R13
+R14
 Etop_tb
-Z26 w1664384229
-R2
+Z25 w1664814862
 R3
 R4
+R5
 R0
-Z27 8../src/top_tb.vhd
-Z28 F../src/top_tb.vhd
+Z26 8../src/top_tb.vhd
+Z27 F../src/top_tb.vhd
 l0
 L9
 VM6P>KAQL:9Yd4F3<_o3N>3
 !s100 Nl7`J1g3O:T=2WJ[N_5gj3
-R7
-31
 R8
+31
+R1
 !i10b 1
-R9
-Z29 !s90 -reportprogress|300|-93|-work|work|../src/top_tb.vhd|
-Z30 !s107 ../src/top_tb.vhd|
+R10
+Z28 !s90 -reportprogress|300|-93|-work|work|../src/top_tb.vhd|
+Z29 !s107 ../src/top_tb.vhd|
 !i113 0
-R12
 R13
+R14
 Aarch
-R2
 R3
 R4
+R5
 DEx4 work 6 top_tb 0 22 M6P>KAQL:9Yd4F3<_o3N>3
-l30
+l32
 L12
-VUDH>[Rm?f0?0VO8AL>hNj2
-!s100 a>I?ZU^EWln<1g;@NUX:i2
-R7
-31
+VNG4U:^lN?h_@8Dd;KO6Sj2
+!s100 6odITefQGZP>BRMbHOM?a2
 R8
+31
+R1
 !i10b 1
-R9
+R10
+R28
 R29
-R30
 !i113 0
-R12
 R13
+R14

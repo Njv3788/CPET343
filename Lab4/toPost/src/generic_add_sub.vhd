@@ -27,11 +27,11 @@ architecture beh of generic_add_sub is
 
 begin
 
-  process(add_Sub)
+  process(add_Sub,a,b)
   begin
     case(add_sub) is
-      when '0' => sum_temp <= std_logic_vector(unsigned('0' & a) - unsigned('0' & b) - unsigned(cin_guard & cin));
-      when others=> sum_temp <= std_logic_vector(unsigned('0' & a) + unsigned('0' & b) + unsigned(cin_guard & cin));
+      when '0' => sum_temp <= std_logic_vector(unsigned('0' & a) + unsigned('0' & b) + unsigned(cin_guard & cin));
+      when others=> sum_temp <= std_logic_vector(unsigned('0' & a) - unsigned('0' & b) - unsigned(cin_guard & cin));
      end case;
   end process;
 

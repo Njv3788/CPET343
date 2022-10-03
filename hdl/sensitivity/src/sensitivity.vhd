@@ -17,7 +17,7 @@ end sensitivity;
 architecture beh of sensitivity is
 
 begin
-process(s,a)
+process(s,a,b)
   begin
     if (s = '1') then 
       c <= a;

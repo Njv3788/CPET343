@@ -17,7 +17,7 @@ architecture beh of sequential is
 signal b : std_logic;
 
 begin
-process(a)
+process(a,b)
   begin
     b  <= a;   
     c  <= b;   

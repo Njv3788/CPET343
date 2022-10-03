@@ -9,6 +9,7 @@ entity top is
   port (
     clk             : in  std_logic; 
     reset           : in  std_logic;
+    add             : in  std_logic;
     a               : in  std_logic_vector(2 downto 0);
     b               : in  std_logic_vector(2 downto 0);
     seven_seg_out   : out std_logic_vector(6 downto 0)
@@ -53,7 +54,7 @@ begin
       a              => a,
       b              => b,
       cin            => '0',
-      add_Sub        => '1',
+      add_Sub        => add,
       sum            => bcd(2 downto 0),
       cout           => bcd(3)
     );

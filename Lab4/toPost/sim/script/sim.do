@@ -5,4 +5,4 @@ vcom -93 -work work ../../src/seven_seg/src/seven_seg.vhd
 vcom -93 -work work ../src/top_tb.vhd
 vsim -voptargs=+acc top_tb
 do wave.do
-run 2700  ns
+run 5200  ns
