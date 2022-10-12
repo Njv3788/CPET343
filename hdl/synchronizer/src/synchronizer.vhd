@@ -24,7 +24,7 @@ double_flop :process(reset,clk,async_in)
   begin
     if reset = '1' then
       flop1 <= '0';   
-      flop2 <= '0';	
+      flop2 <= '0';
     elsif rising_edge(clk) then
       flop1 <= async_in;
       flop2 <= flop1;

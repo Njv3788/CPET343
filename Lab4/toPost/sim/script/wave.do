@@ -22,10 +22,19 @@ quietly WaveActivateNextPane {} 0
 add wave -noupdate /top_tb/uut/clk
 add wave -noupdate /top_tb/uut/reset
 add wave -noupdate /top_tb/uut/add
-add wave -noupdate -radix States /top_tb/uut/seven_seg_out
+add wave -noupdate /top_tb/uut/add_sync
+add wave -noupdate /top_tb/uut/sub
+add wave -noupdate /top_tb/uut/sub_sync
+add wave -noupdate /top_tb/uut/add_SUB
+add wave -noupdate -radix States /top_tb/uut/a_out
+add wave -noupdate -radix States /top_tb/uut/b_out
+add wave -noupdate -radix States /top_tb/uut/result_out
 add wave -noupdate -radix Decimal /top_tb/uut/bcd
-add wave -noupdate /top_tb/a_tb
-add wave -noupdate /top_tb/b_tb
+add wave -noupdate /top_tb/uut/a_sync
+add wave -noupdate /top_tb/uut/b_sync
+add wave -noupdate /top_tb/uut/a
+
+add wave -noupdate /top_tb/uut/b
 
 
 TreeUpdate [SetDefaultTree]

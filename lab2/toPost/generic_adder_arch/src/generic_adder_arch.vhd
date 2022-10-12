@@ -34,6 +34,7 @@ end component full_adder_single_bit_arch;
 signal carry_internal: std_logic_vector(bits downto 0);
 
 begin
+
   adders: for i in 0 to bits-1 generate
     full_adder: full_adder_single_bit_arch
       port map (

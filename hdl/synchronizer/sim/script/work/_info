@@ -1,0 +1,99 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dS:/Documents/CPET343/hdl/synchronizer/sim/script
+T_opt
+!s110 1664822196
+V6e8g`>>cA@40:73cKA3:Y3
+04 15 3 work synchronizer_tb beh 1
+=1-b07b251b031b-633b2bb4-13-2fcc
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+R0
+Esynchronizer
+Z1 w1664829729
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z4 8../../src/synchronizer.vhd
+Z5 F../../src/synchronizer.vhd
+l0
+L8
+VnGgU=fS;c=XOfz<fGVeQK1
+!s100 ViJ7SUM[72W@oi<E1`oo32
+Z6 OL;C;2019.2;69
+31
+Z7 !s110 1664829913
+!i10b 1
+Z8 !s108 1664829913.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|../../src/synchronizer.vhd|
+Z10 !s107 ../../src/synchronizer.vhd|
+!i113 0
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abeh
+R2
+R3
+DEx4 work 12 synchronizer 0 22 nGgU=fS;c=XOfz<fGVeQK1
+l22
+L17
+V>U?1anga3ZE[l7k4A0>;O1
+!s100 mAeVWK0A8SkKn`n:I@]hC1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Esynchronizer_tb
+Z13 w1664408175
+R2
+R3
+R0
+Z14 8../src/synchronizer_tb.vhd
+Z15 F../src/synchronizer_tb.vhd
+l0
+L8
+VceHO9Z967oKi?G;R@>0FV3
+!s100 lYE^QcY9nk;EIMN:W>FHT1
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|../src/synchronizer_tb.vhd|
+Z17 !s107 ../src/synchronizer_tb.vhd|
+!i113 0
+R11
+R12
+Abeh
+R2
+R3
+Z18 DEx4 work 15 synchronizer_tb 0 22 ceHO9Z967oKi?G;R@>0FV3
+l28
+L11
+Z19 Vd[c7EnmZXZA=R6]O^lajH0
+Z20 !s100 <IRDN0goH]SD`7o;5c67D2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 0
+R11
+R12

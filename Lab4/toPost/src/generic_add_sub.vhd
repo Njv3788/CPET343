@@ -14,7 +14,7 @@ entity generic_add_sub is
     a       : in  std_logic_vector(bits-1 downto 0);
     b       : in  std_logic_vector(bits-1 downto 0);
     cin     : in  std_logic;
-    add_Sub : in  std_logic;
+    add_SUB : in  std_logic;
     sum     : out std_logic_vector(bits-1 downto 0);
     cout    : out std_logic
   );
@@ -27,9 +27,9 @@ architecture beh of generic_add_sub is
 
 begin
 
-  process(add_Sub,a,b)
+  process(add_SUB,a,b)
   begin
-    case(add_sub) is
+    case(add_SUB) is
       when '0' => sum_temp <= std_logic_vector(unsigned('0' & a) + unsigned('0' & b) + unsigned(cin_guard & cin));
       when others=> sum_temp <= std_logic_vector(unsigned('0' & a) - unsigned('0' & b) - unsigned(cin_guard & cin));
      end case;
