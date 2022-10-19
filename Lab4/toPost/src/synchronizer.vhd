@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
--- Dr. Kaputa
--- synchronizer example
+-- Nathaniel 
+--  3_bit synchronizer
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;      
@@ -29,7 +29,7 @@ double_flop :process(reset,clk,async_in)
       flop3 <= "000";
     elsif rising_edge(clk) then
       flop1 <= async_in;
-      flop2 <= flop1;
+      flop2 <= flop1; 
       flop3 <= flop2;
     end if;
 end process;

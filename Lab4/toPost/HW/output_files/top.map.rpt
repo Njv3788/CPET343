@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Wed Oct 05 14:33:35 2022
+Mon Oct 17 15:58:24 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -13,16 +13,15 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Parameter Settings for User Entity Instance: generic_add_sub:plus_one
- 12. Port Connectivity Checks: "seven_seg:display_b"
- 13. Port Connectivity Checks: "seven_seg:display_a"
- 14. Port Connectivity Checks: "generic_add_sub:plus_one"
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Parameter Settings for User Entity Instance: generic_add_sub:plus_one
+ 11. Port Connectivity Checks: "seven_seg:display_b"
+ 12. Port Connectivity Checks: "seven_seg:display_a"
+ 13. Port Connectivity Checks: "generic_add_sub:plus_one"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -48,13 +47,13 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct 05 14:33:35 2022           ;
+; Analysis & Synthesis Status     ; Successful - Mon Oct 17 15:58:24 2022           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; top                                             ;
 ; Top-level Entity Name           ; top                                             ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 47                                              ;
+; Total registers                 ; 48                                              ;
 ; Total pins                      ; 31                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
@@ -185,31 +184,31 @@ refer to the applicable agreement for further details.
 +----------------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 25          ;
-;                                             ;             ;
-; Combinational ALUT usage for logic          ; 32          ;
-;     -- 7 input functions                    ; 0           ;
-;     -- 6 input functions                    ; 0           ;
-;     -- 5 input functions                    ; 0           ;
-;     -- 4 input functions                    ; 7           ;
-;     -- <=3 input functions                  ; 25          ;
-;                                             ;             ;
-; Dedicated logic registers                   ; 47          ;
-;                                             ;             ;
-; I/O pins                                    ; 31          ;
-;                                             ;             ;
-; Total DSP Blocks                            ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; reset~input ;
-; Maximum fan-out                             ; 48          ;
-; Total fan-out                               ; 289         ;
-; Average fan-out                             ; 2.05        ;
-+---------------------------------------------+-------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 25        ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 31        ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 0         ;
+;     -- 5 input functions                    ; 0         ;
+;     -- 4 input functions                    ; 7         ;
+;     -- <=3 input functions                  ; 24        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 48        ;
+;                                             ;           ;
+; I/O pins                                    ; 31        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 48        ;
+; Total fan-out                               ; 290       ;
+; Average fan-out                             ; 2.06      ;
++---------------------------------------------+-----------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -217,7 +216,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------+--------------------------+--------------+
 ; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Entity Name              ; Library Name ;
 +----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------+--------------------------+--------------+
-; |top                                   ; 32 (2)              ; 47 (0)                    ; 0                 ; 0          ; 31   ; 0            ; |top                                   ; top                      ; work         ;
+; |top                                   ; 31 (1)              ; 48 (1)                    ; 0                 ; 0          ; 31   ; 0            ; |top                                   ; top                      ; work         ;
 ;    |generic_add_sub:plus_one|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|generic_add_sub:plus_one          ; generic_add_sub          ; work         ;
 ;    |rising_edge_synchronizer:sync_add| ; 2 (2)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |top|rising_edge_synchronizer:sync_add ; rising_edge_synchronizer ; work         ;
 ;    |rising_edge_synchronizer:sync_sub| ; 2 (2)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |top|rising_edge_synchronizer:sync_sub ; rising_edge_synchronizer ; work         ;
@@ -230,26 +229,15 @@ refer to the applicable agreement for further details.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; add_SUB                                            ; GND                 ; yes                    ;
-; Number of user-specified and inferred latches = 1  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 47    ;
+; Total registers                              ; 48    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 47    ;
+; Number of registers using Asynchronous Clear ; 48    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -334,21 +322,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 47                          ;
-;     CLR               ; 47                          ;
-; arriav_lcell_comb     ; 53                          ;
+; arriav_ff             ; 48                          ;
+;     CLR               ; 48                          ;
+; arriav_lcell_comb     ; 52                          ;
 ;     arith             ; 5                           ;
 ;         1 data inputs ; 2                           ;
 ;         3 data inputs ; 3                           ;
-;     normal            ; 48                          ;
+;     normal            ; 47                          ;
 ;         1 data inputs ; 23                          ;
-;         2 data inputs ; 3                           ;
+;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 15                          ;
 ;         4 data inputs ; 7                           ;
 ; boundary_port         ; 31                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.40                        ;
-; Average LUT depth     ; 1.11                        ;
+; Average LUT depth     ; 1.06                        ;
 +-----------------------+-----------------------------+
 
 
@@ -367,7 +355,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Wed Oct 05 14:33:26 2022
+    Info: Processing started: Mon Oct 17 15:58:14 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -387,8 +375,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file /docume
     Info (12022): Found design unit 1: top-beh File: S:/Documents/CPET343/Lab4/toPost/src/top.vhd Line: 22
     Info (12023): Found entity 1: top File: S:/Documents/CPET343/Lab4/toPost/src/top.vhd Line: 8
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Warning (10631): VHDL Process Statement warning at top.vhd(79): inferring latch(es) for signal or variable "add_SUB", which holds its previous value in one or more paths through the process File: S:/Documents/CPET343/Lab4/toPost/src/top.vhd Line: 79
-Info (10041): Inferred latch for "add_SUB" at top.vhd(79) File: S:/Documents/CPET343/Lab4/toPost/src/top.vhd Line: 79
 Info (12128): Elaborating entity "generic_add_sub" for hierarchy "generic_add_sub:plus_one" File: S:/Documents/CPET343/Lab4/toPost/src/top.vhd Line: 92
 Warning (10540): VHDL Signal Declaration warning at generic_add_sub.vhd(26): used explicit default value for signal "cin_guard" because signal was never assigned a value File: S:/Documents/CPET343/Lab4/toPost/src/generic_add_sub.vhd Line: 26
 Warning (10492): VHDL Process Statement warning at generic_add_sub.vhd(33): signal "cin_guard" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: S:/Documents/CPET343/Lab4/toPost/src/generic_add_sub.vhd Line: 33
@@ -401,14 +387,14 @@ Info (12128): Elaborating entity "synchronizer" for hierarchy "synchronizer:sync
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 85 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 84 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 21 output pins
-    Info (21061): Implemented 54 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4903 megabytes
-    Info: Processing ended: Wed Oct 05 14:33:35 2022
-    Info: Elapsed time: 00:00:09
+    Info (21061): Implemented 53 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4890 megabytes
+    Info: Processing ended: Mon Oct 17 15:58:24 2022
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:16
 
 

@@ -13,33 +13,53 @@ architecture arch of top_tb is
 
 component top is
   port (
-    clk             : in std_logic; 
-    reset           : in std_logic;
-    add             : in  std_logic;
-    a               : in std_logic_vector(2 downto 0);
-    result_out      : out std_logic_vector(6 downto 0)
+    clk             : in  std_logic; 
+    reset           : in  std_logic;
+    btn             : in  std_logic;
+    input           : in  std_logic_vector(7 downto 0);
+    state_out       : out std_logic_vector(3 downto 0);
+    one_out         : out std_logic_vector(6 downto 0);
+    ten_out         : out std_logic_vector(6 downto 0);
+    hun_out         : out std_logic_vector(6 downto 0)
   );  
 end component; 
 
-signal output       : std_logic;
+
 constant period     : time := 20ns;
+
+signal output       : std_logic;
 signal clk          : std_logic := '0';
 signal reset        : std_logic := '1';
-signal add          : std_logic := '1';
-signal a_tb         : std_logic_vector(2 downto 0) := "000";
+signal btn          : std_logic := '1';
+signal input_tb     : std_logic_vector(7 downto 0) := (others => '0'); 
+
 begin
 
 sequential_tb : process 
     begin
       report "****************** sequential testbench start ****************";
-      wait for 60 ns;   -- let all the initial conditions trickle through
-      for k in 0 to 8 loop
-        add <= not(add);
+      wait for 80 ns;   -- let all the initial conditions trickle through
+      for i in 0 to 30 loop
         wait for 20 ns;
-        for i in 0 to 7 loop
-          a_tb <= std_logic_vector(unsigned(a_tb) + 1 );  
-            wait for 40 ns;
-        end loop;
+        if (i = 0) then 
+          input_tb <= "00000101";
+        elsif (i = 2) then
+          input_tb <= "00000010";
+        elsif (i = 8) then 
+          input_tb <= "00000010";
+        elsif (i = 10) then
+          input_tb <= "00000101";
+        elsif (i = 16) then
+          input_tb <= "11001000";
+        elsif (i = 18) then 
+          input_tb <= "01100100";
+        elsif (i = 24) then
+          input_tb <= "01100100";
+        elsif (i = 26) then 
+          input_tb <= "11001000";
+        end if;
+        wait for 20 ns;
+        btn <= not(btn); 
       end loop;
       report "****************** sequential testbench stop ****************";
       wait;
@@ -64,8 +84,8 @@ uut: top
   port map(        
     clk            => clk,
     reset          => reset,
-    add            => add,
-    a              => a_tb,
-    result_out     => open
+    btn            => btn,
+    input          => input_tb,
+    one_out        => open
   );
 end arch;

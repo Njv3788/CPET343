@@ -1,5 +1,6 @@
 |top
 clk => seven_seg:display_result.clk
+clk => add_SUB.CLK
 clk => seven_seg:display_a.clk
 clk => seven_seg:display_b.clk
 clk => rising_edge_synchronizer:sync_add.clk
@@ -7,8 +8,7 @@ clk => rising_edge_synchronizer:sync_sub.clk
 clk => synchronizer:sync_a.clk
 clk => synchronizer:sync_b.clk
 reset => seven_seg:display_result.reset
-reset => add_SUB.IN1
-reset => add_SUB.OUTPUTSELECT
+reset => add_SUB.ACLR
 reset => seven_seg:display_a.reset
 reset => seven_seg:display_b.reset
 reset => rising_edge_synchronizer:sync_add.reset

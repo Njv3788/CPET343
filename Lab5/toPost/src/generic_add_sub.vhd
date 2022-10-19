@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
--- Dr. Kaputa
--- generic adder [behavioral]
+-- Nathaniel Valla
+-- generic add_sub [behavioral]
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -27,7 +27,7 @@ architecture beh of generic_add_sub is
 
 begin
 
-  process(add_SUB,a,b)
+  process(add_SUB,a,b,cin)
   begin
     case(add_SUB) is
       when '0' => sum_temp <= std_logic_vector(unsigned('0' & a) + unsigned('0' & b) + unsigned(cin_guard & cin));

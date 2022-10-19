@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
--- Dr. Kaputa
--- blink top
+-- Nathaniel Valla
+-- Lab 4 top
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -73,14 +73,14 @@ architecture beh of top is
   signal b_guard       : std_logic_vector(3 downto 0);
 begin
 
-  a_guard <= '0' & a_sync;
-  b_guard <= '0' & b_sync;
+  a_guard <= '0' & a_sync;  -- extend to 4 bits for BCD
+  b_guard <= '0' & b_sync;  -- extend to 4 bits for BCD
   
-  process(add_sync,sub_sync,reset)
+  process(clk ,reset)       -- change for a to subtract
   begin
     if(reset ='1') then
       add_Sub <= '0';
-    else
+    elsif rising_edge(clk) then 
       if(add_sync ='1') then
         add_SUB <= '0';
       elsif (sub_sync = '1') then

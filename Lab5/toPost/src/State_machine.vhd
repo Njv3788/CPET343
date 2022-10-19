@@ -17,30 +17,48 @@ end;
 architecture beh of State_machine is
   signal current_state       :std_logic_vector(3 downto 0);
   signal next_state          :std_logic_vector(3 downto 0);
+  
+  constant input_a             :std_logic_vector(3 downto 0) := "0001";
+  constant input_b             :std_logic_vector(3 downto 0) := "0010";
+  constant display_add         :std_logic_vector(3 downto 0) := "0100";
+  constant display_sub         :std_logic_vector(3 downto 0) := "1000";
 begin
     
   process (reset,clk)
   begin
     if (reset = '1') then
-      current_state <= "0001";
+      current_state <= input_a;
     elsif(clk'event and clk = '1')  then
-      if(button = '1') then
         current_state <= next_state;
-      end if;
     end if;
   end process;
   
-  process (reset,current_state,next_state)
+  process (button,current_state)
   begin 
-    if (reset = '1') then 
-        next_state <= "0001";
-    else
-      case (current_state) is
-        when "0001"  => next_state <="0010";
-        when "0010"  => next_state <="0100";
-        when "0100"  => next_state <="1000";
-        when others  => next_state <="0001";
-      end case;
+    if (current_state = input_a) then 
+      if (button = '1') then
+        next_state <= input_b ;
+      else
+        next_state <= input_a;
+      end if;
+    elsif (current_state = input_b ) then
+      if (button = '1') then
+        next_state <= "0100";
+      else
+        next_state <= input_b ;
+      end if;
+    elsif (current_state = display_add) then
+      if (button = '1') then
+        next_state <= display_sub;
+      else
+        next_state <= display_add;
+      end if;
+    elsif (current_state = display_sub) then
+      if (button = '1') then
+        next_state <= input_a;
+      else
+        next_state <= display_sub;
+      end if;
     end if;
   end process;
   

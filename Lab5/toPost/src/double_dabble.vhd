@@ -1,22 +1,29 @@
 -------------------------------------------------------------------------------
--- Dr. Kaputa
--- blink top
+-- Nathaniel Valla
+-- Double Dabble
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
-entity double_dabble  is
+entity double_dabble is
+  generic (
+    bits    : integer := 10
+  );
   port (
-    input           : in  std_logic_vector(7 downto 0)
+    input           : in  std_logic_vector(bits-1 downto 0);
     ones            : out std_logic_vector(3 downto 0);
     tens            : out std_logic_vector(3 downto 0);
-    hundred         : out std_logic_vector(3 downto 0)
+    hundreds        : out std_logic_vector(3 downto 0)
   );  
 end; 
 
 architecture beh of double_dabble is
+  signal   result_padded : STD_LOGIC_VECTOR (11 downto 0);
+  constant pad           : STD_LOGIC_VECTOR (11-bits downto 0) :=(others => '0');
 begin
 
+  result_padded <= pad & input;
   bcd1: process(result_padded)
     -- temporary variable
     variable temp : STD_LOGIC_VECTOR (11 downto 0);
@@ -73,4 +80,4 @@ begin
       --thousands <= STD_LOGIC_VECTOR(bcd(15 downto 12));
     end process bcd1; 
   
-end beh
+end beh;
