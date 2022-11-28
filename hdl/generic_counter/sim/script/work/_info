@@ -12,87 +12,97 @@ Z0 dC:/ravvenLabs/websiteLinks/hdl/generic_counter/sim/script
 T_opt
 !s110 1663597777
 Vi7nYV?@`lP6ZY:kAF`jAe2
-04 18 4 work generic_counter_tb arch 1
+Z1 04 18 4 work generic_counter_tb arch 1
 =1-a87eeaa8187b-63287cd1-75-3508
-o-quiet -auto_acc_if_foreign -work work +acc
-tCvgOpt 0
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
 n@_opt
-OL;O;2019.2;69
-Egeneric_counter
-Z1 w1661889142
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z4 OL;O;2019.2;69
 R0
-Z4 8../../src/generic_counter.vhd
-Z5 F../../src/generic_counter.vhd
+T_opt1
+Z5 !s110 1667252693
+VZAWT:XIK]8[`g:WIRDWcD3
+R1
+=1-b07b2521b1fc-636041d5-27b-1cf4
+R2
+R3
+n@_opt1
+R4
+Egeneric_counter
+Z6 w1664408175
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 dS:/Documents/CPET343/hdl/generic_counter/sim/script
+Z10 8../../src/generic_counter.vhd
+Z11 F../../src/generic_counter.vhd
 l0
 L8
 V3lBn0j^`oHW6kZhD5dE?W3
 !s100 jTg0DN0^<9=cUz=iZg2oi0
-Z6 OL;C;2019.2;69
+Z12 OL;C;2019.2;69
 31
-Z7 !s110 1663597776
+R5
 !i10b 1
-Z8 !s108 1663597776.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|../../src/generic_counter.vhd|
-Z10 !s107 ../../src/generic_counter.vhd|
+Z13 !s108 1667252693.000000
+Z14 !s90 -reportprogress|300|-93|-work|work|../../src/generic_counter.vhd|
+Z15 !s107 ../../src/generic_counter.vhd|
 !i113 0
-Z11 o-93 -work work
-Z12 tExplicit 1 CvgOpt 0
+Z16 o-93 -work work
+Z17 tExplicit 1 CvgOpt 0
 Abeh
-R2
-R3
+R7
+R8
 DEx4 work 15 generic_counter 0 22 3lBn0j^`oHW6kZhD5dE?W3
 l23
 L19
 VTT:M88V=lJ62fz0cSYdIR0
 !s100 z5ik>DVc6W0?c7LPT5hG52
-R6
+R12
 31
-R7
+R5
 !i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Egeneric_counter_tb
+R6
+R7
 R8
 R9
-R10
-!i113 0
-R11
-R12
-Egeneric_counter_tb
-R1
-R2
-R3
-R0
-Z13 8../src/generic_counter_tb.vhd
-Z14 F../src/generic_counter_tb.vhd
+Z18 8../src/generic_counter_tb.vhd
+Z19 F../src/generic_counter_tb.vhd
 l0
 L8
 V:PaVG1RZiC1W2ZClX@B073
 !s100 c51h[cFDVkDfWnJ778_BE2
-R6
-31
-R7
-!i10b 1
-R8
-Z15 !s90 -reportprogress|300|-93|-work|work|../src/generic_counter_tb.vhd|
-Z16 !s107 ../src/generic_counter_tb.vhd|
-!i113 0
-R11
 R12
+31
+R5
+!i10b 1
+R13
+Z20 !s90 -reportprogress|300|-93|-work|work|../src/generic_counter_tb.vhd|
+Z21 !s107 ../src/generic_counter_tb.vhd|
+!i113 0
+R16
+R17
 Aarch
-R2
-R3
+R7
+R8
 DEx4 work 18 generic_counter_tb 0 22 :PaVG1RZiC1W2ZClX@B073
 l30
 L11
 V5]nn95g3RKgAIJK6k2SBW3
 !s100 gQYF@[VINk2N45EU=YI^l1
-R6
-31
-R7
-!i10b 1
-R8
-R15
-R16
-!i113 0
-R11
 R12
+31
+R5
+!i10b 1
+R13
+R20
+R21
+!i113 0
+R16
+R17

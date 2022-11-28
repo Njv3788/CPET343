@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Mon Oct 17 16:17:53 2022
+Wed Oct 19 14:35:53 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -13,17 +13,16 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: generic_add_sub:plus_one
- 13. Parameter Settings for User Entity Instance: synchronizer:sync_a
- 14. Parameter Settings for User Entity Instance: double_dabble:presto_chango
- 15. Port Connectivity Checks: "generic_add_sub:plus_one"
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: generic_add_sub:plus_one
+ 12. Parameter Settings for User Entity Instance: synchronizer:sync_a
+ 13. Parameter Settings for User Entity Instance: double_dabble:presto_chango
+ 14. Port Connectivity Checks: "generic_add_sub:plus_one"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -49,7 +48,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Oct 17 16:17:53 2022           ;
+; Analysis & Synthesis Status     ; Successful - Wed Oct 19 14:35:53 2022           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; top                                             ;
 ; Top-level Entity Name           ; top                                             ;
@@ -161,15 +160,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 20          ;
-; Maximum allowed            ; 10          ;
+; Number detected on machine ; 24          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 10          ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-10        ;   0.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -193,14 +192,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 52        ;
+; Estimate of Logic utilization (ALMs needed) ; 50        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 75        ;
+; Combinational ALUT usage for logic          ; 67        ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 10        ;
+;     -- 6 input functions                    ; 11        ;
 ;     -- 5 input functions                    ; 24        ;
-;     -- 4 input functions                    ; 25        ;
-;     -- <=3 input functions                  ; 16        ;
+;     -- 4 input functions                    ; 19        ;
+;     -- <=3 input functions                  ; 13        ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 79        ;
 ;                                             ;           ;
@@ -210,8 +209,8 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 79        ;
-; Total fan-out                               ; 650       ;
-; Average fan-out                             ; 2.88      ;
+; Total fan-out                               ; 625       ;
+; Average fan-out                             ; 2.87      ;
 +---------------------------------------------+-----------+
 
 
@@ -220,8 +219,8 @@ refer to the applicable agreement for further details.
 +----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------+--------------------------+--------------+
 ; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Entity Name              ; Library Name ;
 +----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------+--------------------------+--------------+
-; |top                                   ; 75 (10)             ; 79 (26)                   ; 0                 ; 0          ; 36   ; 0            ; |top                                   ; top                      ; work         ;
-;    |State_machine:state_changer|       ; 15 (15)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |top|State_machine:state_changer       ; State_machine            ; work         ;
+; |top                                   ; 67 (13)             ; 79 (26)                   ; 0                 ; 0          ; 36   ; 0            ; |top                                   ; top                      ; work         ;
+;    |State_machine:state_changer|       ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |top|State_machine:state_changer       ; State_machine            ; work         ;
 ;    |double_dabble:presto_chango|       ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|double_dabble:presto_chango       ; double_dabble            ; work         ;
 ;    |generic_add_sub:plus_one|          ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|generic_add_sub:plus_one          ; generic_add_sub          ; work         ;
 ;    |rising_edge_synchronizer:sync_add| ; 2 (2)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |top|rising_edge_synchronizer:sync_add ; rising_edge_synchronizer ; work         ;
@@ -231,20 +230,6 @@ refer to the applicable agreement for further details.
 ;    |synchronizer:sync_a|               ; 0 (0)               ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |top|synchronizer:sync_a               ; synchronizer             ; work         ;
 +----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------+--------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                     ;
-+----------------------------------------------------+-------------------------------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal                       ; Free of Timing Hazards ;
-+----------------------------------------------------+-------------------------------------------+------------------------+
-; State_machine:state_changer|next_state[0]          ; State_machine:state_changer|next_state[1] ; yes                    ;
-; State_machine:state_changer|next_state[1]          ; State_machine:state_changer|next_state[1] ; yes                    ;
-; State_machine:state_changer|next_state[2]          ; State_machine:state_changer|next_state[1] ; yes                    ;
-; State_machine:state_changer|next_state[3]          ; State_machine:state_changer|next_state[3] ; yes                    ;
-; Number of user-specified and inferred latches = 4  ;                                           ;                        ;
-+----------------------------------------------------+-------------------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -267,7 +252,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+---------+
 ; Inverted Register                            ; Fan out ;
 +----------------------------------------------+---------+
-; State_machine:state_changer|current_state[0] ; 12      ;
+; State_machine:state_changer|current_state[0] ; 10      ;
 ; seven_seg:display_one|seven_seg_out[0]       ; 1       ;
 ; seven_seg:display_one|seven_seg_out[1]       ; 1       ;
 ; seven_seg:display_one|seven_seg_out[2]       ; 1       ;
@@ -301,7 +286,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top|result[5]             ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top|result[7]             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -352,21 +337,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 79                          ;
 ;     CLR               ; 55                          ;
 ;     ENA CLR           ; 24                          ;
-; arriav_lcell_comb     ; 97                          ;
+; arriav_lcell_comb     ; 89                          ;
 ;     arith             ; 10                          ;
 ;         1 data inputs ; 2                           ;
 ;         3 data inputs ; 8                           ;
-;     normal            ; 87                          ;
-;         1 data inputs ; 24                          ;
+;     normal            ; 79                          ;
+;         1 data inputs ; 23                          ;
 ;         2 data inputs ; 1                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 25                          ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 19                          ;
 ;         5 data inputs ; 24                          ;
-;         6 data inputs ; 10                          ;
+;         6 data inputs ; 11                          ;
 ; boundary_port         ; 36                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 1.83                        ;
+; Average LUT depth     ; 1.81                        ;
 +-----------------------+-----------------------------+
 
 
@@ -375,7 +360,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -385,10 +370,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Oct 17 16:17:43 2022
+    Info: Processing started: Wed Oct 19 14:35:45 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file /documents/cpet343/lab5/topost/src/top.vhd
     Info (12022): Found design unit 1: top-beh File: S:/Documents/CPET343/Lab5/toPost/src/top.vhd Line: 21
     Info (12023): Found entity 1: top File: S:/Documents/CPET343/Lab5/toPost/src/top.vhd Line: 8
@@ -411,43 +396,26 @@ Info (12021): Found 2 design units, including 1 entities, in source file /docume
     Info (12022): Found design unit 1: double_dabble-beh File: S:/Documents/CPET343/Lab5/toPost/src/double_dabble.vhd Line: 21
     Info (12023): Found entity 1: double_dabble File: S:/Documents/CPET343/Lab5/toPost/src/double_dabble.vhd Line: 9
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Info (12128): Elaborating entity "generic_add_sub" for hierarchy "generic_add_sub:plus_one" File: S:/Documents/CPET343/Lab5/toPost/src/top.vhd Line: 150
+Info (12128): Elaborating entity "generic_add_sub" for hierarchy "generic_add_sub:plus_one" File: S:/Documents/CPET343/Lab5/toPost/src/top.vhd Line: 155
 Warning (10540): VHDL Signal Declaration warning at generic_add_sub.vhd(26): used explicit default value for signal "cin_guard" because signal was never assigned a value File: S:/Documents/CPET343/Lab5/toPost/src/generic_add_sub.vhd Line: 26
 Warning (10492): VHDL Process Statement warning at generic_add_sub.vhd(33): signal "cin_guard" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: S:/Documents/CPET343/Lab5/toPost/src/generic_add_sub.vhd Line: 33
-Warning (10492): VHDL Process Statement warning at generic_add_sub.vhd(33): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: S:/Documents/CPET343/Lab5/toPost/src/generic_add_sub.vhd Line: 33
 Warning (10492): VHDL Process Statement warning at generic_add_sub.vhd(34): signal "cin_guard" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: S:/Documents/CPET343/Lab5/toPost/src/generic_add_sub.vhd Line: 34
-Warning (10492): VHDL Process Statement warning at generic_add_sub.vhd(34): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: S:/Documents/CPET343/Lab5/toPost/src/generic_add_sub.vhd Line: 34
-Info (12128): Elaborating entity "rising_edge_synchronizer" for hierarchy "rising_edge_synchronizer:sync_add" File: S:/Documents/CPET343/Lab5/toPost/src/top.vhd Line: 163
-Info (12128): Elaborating entity "synchronizer" for hierarchy "synchronizer:sync_a" File: S:/Documents/CPET343/Lab5/toPost/src/top.vhd Line: 171
-Info (12128): Elaborating entity "State_machine" for hierarchy "State_machine:state_changer" File: S:/Documents/CPET343/Lab5/toPost/src/top.vhd Line: 182
-Warning (10631): VHDL Process Statement warning at State_machine.vhd(31): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 31
-Info (10041): Inferred latch for "next_state[0]" at State_machine.vhd(31) File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 31
-Info (10041): Inferred latch for "next_state[1]" at State_machine.vhd(31) File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 31
-Info (10041): Inferred latch for "next_state[2]" at State_machine.vhd(31) File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 31
-Info (10041): Inferred latch for "next_state[3]" at State_machine.vhd(31) File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 31
-Info (12128): Elaborating entity "double_dabble" for hierarchy "double_dabble:presto_chango" File: S:/Documents/CPET343/Lab5/toPost/src/top.vhd Line: 190
-Info (12128): Elaborating entity "seven_seg" for hierarchy "seven_seg:display_one" File: S:/Documents/CPET343/Lab5/toPost/src/top.vhd Line: 201
-Warning (13012): Latch State_machine:state_changer|next_state[0] has unsafe behavior File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 31
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal State_machine:state_changer|current_state[3] File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 24
-Warning (13012): Latch State_machine:state_changer|next_state[1] has unsafe behavior File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 31
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal State_machine:state_changer|current_state[3] File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 24
-Warning (13012): Latch State_machine:state_changer|next_state[2] has unsafe behavior File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 31
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal State_machine:state_changer|current_state[3] File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 24
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal State_machine:state_changer|current_state[3] File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 24
-Warning (13012): Latch State_machine:state_changer|next_state[3] has unsafe behavior File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 31
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal State_machine:state_changer|current_state[3] File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 24
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal State_machine:state_changer|current_state[3] File: S:/Documents/CPET343/Lab5/toPost/src/State_machine.vhd Line: 24
+Info (12128): Elaborating entity "rising_edge_synchronizer" for hierarchy "rising_edge_synchronizer:sync_add" File: S:/Documents/CPET343/Lab5/toPost/src/top.vhd Line: 168
+Info (12128): Elaborating entity "synchronizer" for hierarchy "synchronizer:sync_a" File: S:/Documents/CPET343/Lab5/toPost/src/top.vhd Line: 176
+Info (12128): Elaborating entity "State_machine" for hierarchy "State_machine:state_changer" File: S:/Documents/CPET343/Lab5/toPost/src/top.vhd Line: 187
+Info (12128): Elaborating entity "double_dabble" for hierarchy "double_dabble:presto_chango" File: S:/Documents/CPET343/Lab5/toPost/src/top.vhd Line: 195
+Info (12128): Elaborating entity "seven_seg" for hierarchy "seven_seg:display_one" File: S:/Documents/CPET343/Lab5/toPost/src/top.vhd Line: 206
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 156 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 145 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 25 output pins
-    Info (21061): Implemented 120 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 4917 megabytes
-    Info: Processing ended: Mon Oct 17 16:17:53 2022
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:17
+    Info (21061): Implemented 109 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4910 megabytes
+    Info: Processing ended: Wed Oct 19 14:35:54 2022
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:14
 
 

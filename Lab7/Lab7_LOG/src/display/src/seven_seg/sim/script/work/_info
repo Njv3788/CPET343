@@ -1,0 +1,100 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dS:/Documents/CPET343/Lab5/toPost/src/seven_seg/sim/script
+T_opt
+!s110 1665514201
+VdRgJJDZ6L;lV:__d@6QTh1
+04 12 4 work seven_seg_tb arch 1
+=1-b07b2521b13c-6345bad9-d2-4318
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+Eseven_seg
+Z1 w1664408171
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z4 8../../src/seven_seg.vhd
+Z5 F../../src/seven_seg.vhd
+l0
+L8
+V>gz;8C[Kom88YPngL@[R70
+!s100 lKTd95kbgLl6@?Aog=ebV2
+Z6 OL;C;2019.2;69
+31
+Z7 !s110 1665514200
+!i10b 1
+Z8 !s108 1665514200.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|../../src/seven_seg.vhd|
+Z10 !s107 ../../src/seven_seg.vhd|
+!i113 0
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abeh
+R2
+R3
+DEx4 work 9 seven_seg 0 22 >gz;8C[Kom88YPngL@[R70
+l18
+L17
+V<VUSzFLMYWQ17:jneD7Tb2
+!s100 8d5JSYz;;02BSj:<E<bJe3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Eseven_seg_tb
+R1
+Z13 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+R0
+Z14 8../src/seven_seg_tb.vhd
+Z15 F../src/seven_seg_tb.vhd
+l0
+L9
+V=Fn8URJ<?]?=oFC]eNCod3
+!s100 <[]cRiH?Cjz[eK]hRnh^O3
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|../src/seven_seg_tb.vhd|
+Z17 !s107 ../src/seven_seg_tb.vhd|
+!i113 0
+R11
+R12
+Aarch
+R13
+R2
+R3
+DEx4 work 12 seven_seg_tb 0 22 =Fn8URJ<?]?=oFC]eNCod3
+l29
+L12
+VCHdVbL?A4MlX5^bNV483k2
+!s100 kT8cbTmhGc9=ELD:_f0L92
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 0
+R11
+R12
