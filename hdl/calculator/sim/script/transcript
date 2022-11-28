@@ -1,0 +1,94 @@
+# //  ModelSim SE-64 2019.2 Apr 17 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 10:26:21 on Nov 01,2022
+# vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 10:26:21 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 10:26:21 on Nov 01,2022
+# vcom -reportprogress 300 -93 -work work ../../src/State_machine.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity State_machine
+# -- Compiling architecture beh of State_machine
+# End time: 10:26:21 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 10:26:21 on Nov 01,2022
+# vcom -reportprogress 300 -93 -work work ../../src/calculator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity calculator
+# -- Compiling architecture beh of calculator
+# End time: 10:26:22 on Nov 01,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 10:26:22 on Nov 01,2022
+# vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture beh of alu
+# End time: 10:26:22 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 10:26:22 on Nov 01,2022
+# vcom -reportprogress 300 -93 -work work ../src/calculator_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity calculator_tb
+# -- Compiling architecture arch of calculator_tb
+# ** Warning: ../src/calculator_tb.vhd(29): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 10:26:22 on Nov 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" calculator_tb 
+# Start time: 10:26:22 on Nov 01,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.calculator_tb(arch)#1
+# Loading work.calculator(beh)#1
+# Loading work.state_machine(beh)#1
+# Loading work.memory(beh)#1
+# Loading work.alu(beh)#1
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: ****************** sequential testbench start ****************
+#    Time: 0 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: ****************** sequential testbench stop ****************
+#    Time: 780 ns  Iteration: 0  Instance: /calculator_tb
+# Causality operation skipped due to absence of debug database file
+# End time: 10:35:58 on Nov 01,2022, Elapsed time: 0:09:36
+# Errors: 28, Warnings: 1

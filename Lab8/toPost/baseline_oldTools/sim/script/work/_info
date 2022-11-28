@@ -1,0 +1,221 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dS:/Documents/CPET343/Lab8/toPost/baseline_oldTools/sim/script
+T_opt
+Z1 !s110 1669064633
+Vfh4j`fo?R`1SWMc<NWdLj1
+04 23 4 work audio_processor_3000_tb arch 1
+=1-b07b2521b033-637be7b9-25a-3408
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+Eaudio_processor_3000
+Z2 w1668023669
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z6 8../../src/audio_processor_3000.vhd
+Z7 F../../src/audio_processor_3000.vhd
+l0
+L8
+VY21AaVK3;bA8h5elAeKRn2
+!s100 ;<d`j4<Fg[USdY4dQHjOJ0
+Z8 OL;C;2019.2;69
+31
+R1
+!i10b 1
+Z9 !s108 1669064633.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|../../src/audio_processor_3000.vhd|
+Z11 !s107 ../../src/audio_processor_3000.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abeh
+R3
+R4
+R5
+DEx4 work 20 audio_processor_3000 0 22 Y21AaVK3;bA8h5elAeKRn2
+l40
+L19
+VTi<KNnIm_QH6=G7@<PN[00
+!s100 E>`ej^M2j]>]L3?@WeZ4O1
+R8
+31
+R1
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Eaudio_processor_3000_tb
+R2
+R3
+R4
+R5
+R0
+Z14 8../src/audio_processor_3000_tb.vhd
+Z15 F../src/audio_processor_3000_tb.vhd
+l0
+L9
+Vo<T9<70MJcB=zQcRE;WRF2
+!s100 <FZ?1mRFjBn3BfA3?NMPM1
+R8
+31
+R1
+!i10b 1
+R9
+Z16 !s90 -reportprogress|300|-93|-work|work|../src/audio_processor_3000_tb.vhd|
+Z17 !s107 ../src/audio_processor_3000_tb.vhd|
+!i113 0
+R12
+R13
+Aarch
+R3
+R4
+R5
+DEx4 work 23 audio_processor_3000_tb 0 22 o<T9<70MJcB=zQcRE;WRF2
+l30
+L12
+V=bIdLkagzMDfV3SSo]I`K1
+!s100 j=^I7S`MzJJ8j`YDl<KA;0
+R8
+31
+R1
+!i10b 1
+R9
+R16
+R17
+!i113 0
+R12
+R13
+Erising_edge_synchronizer
+R2
+R4
+R5
+R0
+Z18 8../../src/rising_edge_synchronizer.vhd
+Z19 F../../src/rising_edge_synchronizer.vhd
+l0
+L8
+V7^gf[0AcMz;oFDKIj=b3N3
+!s100 8>=9Tc6dAVdENebjXiG<30
+R8
+31
+Z20 !s110 1669064632
+!i10b 1
+Z21 !s108 1669064632.000000
+Z22 !s90 -reportprogress|300|-93|-work|work|../../src/rising_edge_synchronizer.vhd|
+Z23 !s107 ../../src/rising_edge_synchronizer.vhd|
+!i113 0
+R12
+R13
+Abeh
+R4
+R5
+DEx4 work 24 rising_edge_synchronizer 0 22 7^gf[0AcMz;oFDKIj=b3N3
+l22
+L17
+VDiJNT@9ALH<beU@?[8WYF3
+!s100 bl0g6Z13_?2U69Fj`HUc[2
+R8
+31
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 0
+R12
+R13
+Erom_data
+Z24 w1668023670
+Z25 DPx9 altera_mf 20 altera_mf_components 0 22 THelGI^EL^_c1RBok5T_I0
+R4
+R5
+R0
+Z26 8../../src/rom_data/rom_data.vhd
+Z27 F../../src/rom_data/rom_data.vhd
+l0
+L43
+VRWR7CG@@f0P:aP`WJCG@S3
+!s100 3OF@?0zK=gZ@:TQ3ckXiW3
+R8
+31
+R20
+!i10b 1
+R21
+Z28 !s90 -reportprogress|300|-93|-work|work|../../src/rom_data/rom_data.vhd|
+Z29 !s107 ../../src/rom_data/rom_data.vhd|
+!i113 0
+R12
+R13
+Asyn
+R25
+R4
+R5
+DEx4 work 8 rom_data 0 22 RWR7CG@@f0P:aP`WJCG@S3
+l57
+L53
+VJ@gmg^mE170P8g@oDCY<D0
+!s100 FWA@ePhK:Fh]O9UQ4m<QH3
+R8
+31
+R20
+!i10b 1
+R21
+R28
+R29
+!i113 0
+R12
+R13
+Erom_instructions
+R24
+R4
+R5
+R0
+Z30 8../../src/rom_instructions/rom_instructions.vhd
+Z31 F../../src/rom_instructions/rom_instructions.vhd
+l0
+L42
+VZ@nnYiG2GX?m0AihC]Zg40
+!s100 gzW;2@`;P`NkEI3ie7>EZ3
+R8
+31
+R20
+!i10b 1
+R21
+Z32 !s90 -reportprogress|300|-93|-work|work|../../src/rom_instructions/rom_instructions.vhd|
+Z33 !s107 ../../src/rom_instructions/rom_instructions.vhd|
+!i113 0
+R12
+R13
+Asyn
+R4
+R5
+DEx4 work 16 rom_instructions 0 22 Z@nnYiG2GX?m0AihC]Zg40
+l82
+L52
+VKDXL2^izN:J?d71zhWPaG3
+!s100 @Y3^M>dFUk5JfjhKHWBU00
+R8
+31
+R20
+!i10b 1
+R21
+R32
+R33
+!i113 0
+R12
+R13

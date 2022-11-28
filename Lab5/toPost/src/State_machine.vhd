@@ -35,31 +35,34 @@ begin
   
   process (button,current_state)
   begin 
-    if (current_state = input_a) then 
-      if (button = '1') then
-        next_state <= input_b ;
-      else
-        next_state <= input_a;
-      end if;
-    elsif (current_state = input_b ) then
-      if (button = '1') then
-        next_state <= "0100";
-      else
-        next_state <= input_b ;
-      end if;
-    elsif (current_state = display_add) then
-      if (button = '1') then
-        next_state <= display_sub;
-      else
-        next_state <= display_add;
-      end if;
-    elsif (current_state = display_sub) then
-      if (button = '1') then
-        next_state <= input_a;
-      else
-        next_state <= display_sub;
-      end if;
-    end if;
+    case current_state is
+      when input_a     => 
+        if (button = '1') then
+          next_state <= input_b ;
+        else
+          next_state <= input_a;
+        end if;
+      when input_b     =>
+        if (button = '1') then
+          next_state <= "0100";
+        else
+          next_state <= input_b ;
+         end if;
+      when display_add =>
+        if (button = '1') then
+          next_state <= display_sub;
+        else
+          next_state <= display_add;
+        end if;
+      when display_sub => 
+        if (button = '1') then
+          next_state <= input_a;
+        else
+          next_state <= display_sub;
+        end if;
+      when others      =>
+          next_state <= input_a;
+    end case;
   end process;
   
   state <= current_state;

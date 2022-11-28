@@ -12,18 +12,19 @@
 # //  18 U.S.C. Section 1905.
 # //
 # do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 10:29:36 on Sep 19,2022
+# Start time: 17:44:53 on Oct 31,2022
 # vcom -reportprogress 300 -93 -work work ../../src/generic_counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity generic_counter
 # -- Compiling architecture beh of generic_counter
-# End time: 10:29:36 on Sep 19,2022, Elapsed time: 0:00:00
+# End time: 17:44:53 on Oct 31,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 10:29:36 on Sep 19,2022
+# Start time: 17:44:53 on Oct 31,2022
 # vcom -reportprogress 300 -93 -work work ../src/generic_counter_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -31,10 +32,10 @@
 # -- Compiling entity generic_counter_tb
 # -- Compiling architecture arch of generic_counter_tb
 # ** Warning: ../src/generic_counter_tb.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 10:29:36 on Sep 19,2022, Elapsed time: 0:00:00
+# End time: 17:44:53 on Oct 31,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vsim -voptargs="+acc" generic_counter_tb 
-# Start time: 10:29:36 on Sep 19,2022
+# Start time: 17:44:53 on Oct 31,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
@@ -48,6 +49,5 @@
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/ravvenLabs/websiteLinks/hdl/generic_counter/sim/script/wave.do
-# End time: 10:39:35 on Sep 19,2022, Elapsed time: 0:09:59
-# Errors: 1, Warnings: 0
+# End time: 17:45:13 on Oct 31,2022, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 0
