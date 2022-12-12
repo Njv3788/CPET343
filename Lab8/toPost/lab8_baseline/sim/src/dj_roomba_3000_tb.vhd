@@ -26,6 +26,7 @@ constant period     : time := 20ns;
 signal clk          : std_logic := '0';
 signal reset        : std_logic := '1';
 signal sync         : std_logic := '0';
+signal execute_btn  : std_logic := '0';
 
 begin
 
@@ -33,7 +34,7 @@ dj_roomba : dj_roomba_3000
   port map(
     clk         => clk,
     reset       => reset,
-    execute_btn => '0',
+    execute_btn => execute_btn,
     sync        => sync,
     led         => open,
     audio_out   => open
@@ -59,9 +60,10 @@ main: process
   begin
     report "****************** TB Start ****************" severity note;
     
-    for i in 0 to 20 loop
+    for i in 0 to 256 loop
       wait for 100 ns;     
       sync <= not sync;
+      execute_btn <= not execute_btn;
     end loop;
     
     report "****************** TB Finish ****************" severity note;

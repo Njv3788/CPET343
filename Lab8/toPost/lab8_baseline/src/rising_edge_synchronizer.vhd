@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
--- Dr. Kaputa
--- rising_edge_synchronizer example
+-- Nathaniel Valla
+-- rising edge synchronizer
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;      
@@ -16,20 +16,30 @@ end rising_edge_synchronizer;
 
 architecture beh of rising_edge_synchronizer is
 -- signal declarations
-signal input_z     : std_logic := '1';
-signal input_zz    : std_logic := '1';
+signal input_z     : std_logic;
+signal input_zz    : std_logic;
+signal input_zzz   : std_logic;
 
 begin 
-process(reset,clk,input)
-	begin
-		if reset = '1' then
-			edge        <= '0';
-      input_z     <= '0';
-      input_zz    <= '0';
-		elsif rising_edge(clk) then
+synchronizer: process(reset,clk,input)
+  begin
+    if reset = '1' then
+      input_z     <= '1';
+      input_zz    <= '1';
+    elsif rising_edge(clk) then
       input_z   <= input;
       input_zz  <= input_z;
-      edge <= (input_z xor input_zz) and input_zz;
-		end if;
-end process;	
+    end if;
+end process;  
+
+rising_edge_detector: process(reset,clk,input_zz)
+  begin
+    if reset = '1' then
+      edge        <= '0';
+      input_zzz   <= '1';
+    elsif rising_edge(clk) then
+      input_zzz   <= input_zz;
+      edge <= (input_zz xor input_zzz) and input_zz;
+    end if;
+end process;  
 end beh; 

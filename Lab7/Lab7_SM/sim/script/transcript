@@ -12,11 +12,12 @@
 # //  18 U.S.C. Section 1905.
 # //
 # do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vmap 2019.2 Lib Mapping Utility 2019.04 Apr 17 2019
 # vmap altera_mf ../../src/altera_mf 
 # Modifying modelsim.ini
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:09 on Nov 28,2022
+# Start time: 09:06:40 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/rom/instructions.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -24,20 +25,20 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity instructions
 # -- Compiling architecture SYN of instructions
-# End time: 12:31:10 on Nov 28,2022, Elapsed time: 0:00:01
+# End time: 09:06:41 on Dec 11,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:10 on Nov 28,2022
+# Start time: 09:06:41 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package components
-# End time: 12:31:10 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:41 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:10 on Nov 28,2022
+# Start time: 09:06:41 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/top.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -46,20 +47,20 @@
 # -- Loading package components
 # -- Compiling entity top
 # -- Compiling architecture beh of top
-# End time: 12:31:10 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:41 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:10 on Nov 28,2022
+# Start time: 09:06:41 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity rising_edge_synchronizer
 # -- Compiling architecture beh of rising_edge_synchronizer
-# End time: 12:31:10 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:41 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:10 on Nov 28,2022
+# Start time: 09:06:41 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/machine.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -68,50 +69,50 @@
 # -- Loading package components
 # -- Compiling entity machine
 # -- Compiling architecture beh of machine
-# End time: 12:31:10 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:42 on Dec 11,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:11 on Nov 28,2022
+# Start time: 09:06:42 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/generic_laterial_shift.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity generic_laterial_shift
 # -- Compiling architecture beh of generic_laterial_shift
-# End time: 12:31:11 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:42 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:11 on Nov 28,2022
+# Start time: 09:06:42 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/generic_2x1_mux.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity generic_2x1_mux
 # -- Compiling architecture beh of generic_2x1_mux
-# End time: 12:31:11 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:42 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:11 on Nov 28,2022
+# Start time: 09:06:42 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/generic_nzero.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity generic_nzero
 # -- Compiling architecture beh of generic_nzero
-# End time: 12:31:11 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:42 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:11 on Nov 28,2022
+# Start time: 09:06:42 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/program_counter/src/program_counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity program_counter
 # -- Compiling architecture beh of program_counter
-# End time: 12:31:11 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:42 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:11 on Nov 28,2022
+# Start time: 09:06:42 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/program_counter/src/generic_adder_beh/src/generic_adder_beh.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -119,20 +120,20 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity generic_adder_beh
 # -- Compiling architecture beh of generic_adder_beh
-# End time: 12:31:11 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:42 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:11 on Nov 28,2022
+# Start time: 09:06:42 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/display/src/seven_seg/src/seven_seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity seven_seg
 # -- Compiling architecture beh of seven_seg
-# End time: 12:31:11 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:42 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:11 on Nov 28,2022
+# Start time: 09:06:43 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/display/src/double_dabble.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -140,20 +141,20 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity double_dabble
 # -- Compiling architecture beh of double_dabble
-# End time: 12:31:12 on Nov 28,2022, Elapsed time: 0:00:01
+# End time: 09:06:43 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:12 on Nov 28,2022
+# Start time: 09:06:43 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/display/src/display.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity display
 # -- Compiling architecture beh of display
-# End time: 12:31:12 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:43 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:12 on Nov 28,2022
+# Start time: 09:06:43 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/calculator/src/memory/src/memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -161,30 +162,30 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memory
 # -- Compiling architecture beh of memory
-# End time: 12:31:12 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:43 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:12 on Nov 28,2022
+# Start time: 09:06:43 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/calculator/src/State_machine.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity State_machine
 # -- Compiling architecture beh of State_machine
-# End time: 12:31:12 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:43 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:12 on Nov 28,2022
+# Start time: 09:06:43 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/calculator/src/calculator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity calculator
 # -- Compiling architecture beh of calculator
-# End time: 12:31:12 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:43 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:12 on Nov 28,2022
+# Start time: 09:06:43 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../../src/calculator/src/alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -192,10 +193,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity alu
 # -- Compiling architecture beh of alu
-# End time: 12:31:12 on Nov 28,2022, Elapsed time: 0:00:00
+# End time: 09:06:43 on Dec 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 12:31:12 on Nov 28,2022
+# Start time: 09:06:43 on Dec 11,2022
 # vcom -reportprogress 300 -93 -work work ../src/top_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -204,13 +205,11 @@
 # -- Compiling entity top_tb
 # -- Compiling architecture arch of top_tb
 # ** Warning: ../src/top_tb.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 12:31:13 on Nov 28,2022, Elapsed time: 0:00:01
+# End time: 09:06:44 on Dec 11,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 # vsim -voptargs="+acc" top_tb 
-# Start time: 12:31:13 on Nov 28,2022
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "State_machine(beh)".
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "machine(beh)".
+# Start time: 09:06:44 on Dec 11,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -313,5 +312,5 @@
 #    Time: 0 ps  Iteration: 1  Instance: /top_tb/uut/bin2hex_dis/presto_chango
 # ** Note: ****************** sequential testbench stop ****************
 #    Time: 13520 ns  Iteration: 0  Instance: /top_tb
-# End time: 12:32:11 on Nov 28,2022, Elapsed time: 0:00:58
-# Errors: 1, Warnings: 31
+# End time: 09:07:08 on Dec 11,2022, Elapsed time: 0:00:24
+# Errors: 4, Warnings: 31

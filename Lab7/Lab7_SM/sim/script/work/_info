@@ -18,6 +18,7 @@ o-quiet -auto_acc_if_foreign -work work +acc
 tCvgOpt 0
 n@_opt
 OL;O;2019.2;69
+R0
 Ealu
 Z1 w1666647062
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
@@ -32,9 +33,9 @@ VEF8jO9c]L6;C7dFDg2JZi0
 !s100 jHZ7ZS2I3L4<m8`6PdFjK2
 Z7 OL;C;2019.2;69
 31
-Z8 !s110 1669656672
+Z8 !s110 1670767603
 !i10b 1
-Z9 !s108 1669656672.000000
+Z9 !s108 1670767603.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|../../src/calculator/src/alu.vhd|
 Z11 !s107 ../../src/calculator/src/alu.vhd|
 !i113 0
@@ -112,9 +113,9 @@ VXoG2>1On7mmfSY984j`OH3
 !s100 96=Eg^[C[zDD]T9V6YVN50
 R7
 31
-Z19 !s110 1669656670
+Z19 !s110 1670767601
 !i10b 1
-Z20 !s108 1669656670.000000
+Z20 !s108 1670767601.000000
 !s90 -reportprogress|300|-93|-work|work|../../src/components.vhd|
 !s107 ../../src/components.vhd|
 !i113 0
@@ -175,9 +176,9 @@ R7
 31
 R8
 !i10b 1
-Z29 !s108 1669656671.000000
-Z30 !s90 -reportprogress|300|-93|-work|work|../../src/display/src/double_dabble.vhd|
-Z31 !s107 ../../src/display/src/double_dabble.vhd|
+R9
+Z29 !s90 -reportprogress|300|-93|-work|work|../../src/display/src/double_dabble.vhd|
+Z30 !s107 ../../src/display/src/double_dabble.vhd|
 !i113 0
 R12
 R13
@@ -194,28 +195,28 @@ R7
 31
 R8
 !i10b 1
+R9
 R29
 R30
-R31
 !i113 0
 R12
 R13
 Egeneric_2x1_mux
-Z32 w1668523183
+Z31 w1668523183
 R3
 R4
 R0
-Z33 8../../src/generic_2x1_mux.vhd
-Z34 F../../src/generic_2x1_mux.vhd
+Z32 8../../src/generic_2x1_mux.vhd
+Z33 F../../src/generic_2x1_mux.vhd
 l0
 L8
 Vh107TTCnm<_WR2A=9f><C1
 !s100 8GGD2[FkEG5So@H2XXSAD1
 R7
 31
-Z35 !s110 1669656671
+Z34 !s110 1670767602
 !i10b 1
-R29
+Z35 !s108 1670767602.000000
 Z36 !s90 -reportprogress|300|-93|-work|work|../../src/generic_2x1_mux.vhd|
 Z37 !s107 ../../src/generic_2x1_mux.vhd|
 !i113 0
@@ -231,9 +232,9 @@ V6ZfH`TkT8L5oj26Sa3a770
 !s100 Ha1nTn4VBSSNfBYjSHGPM1
 R7
 31
-R35
+R34
 !i10b 1
-R29
+R35
 R36
 R37
 !i113 0
@@ -253,9 +254,9 @@ VZM:m22W6n_OU0[flII;@<2
 !s100 OOaH7j]OJo2FNLlk`2n1j2
 R7
 31
-R35
+R34
 !i10b 1
-R29
+R35
 Z41 !s90 -reportprogress|300|-93|-work|work|../../src/program_counter/src/generic_adder_beh/src/generic_adder_beh.vhd|
 Z42 !s107 ../../src/program_counter/src/generic_adder_beh/src/generic_adder_beh.vhd|
 !i113 0
@@ -272,9 +273,9 @@ VXiACzM[7Kd];V;iL`X2`K1
 !s100 J0QDzX5NX;aLCSO9EOMGC0
 R7
 31
-R35
+R34
 !i10b 1
-R29
+R35
 R41
 R42
 !i113 0
@@ -293,9 +294,9 @@ V:V5=3l>VVj=mdO2^eo5^Z0
 !s100 doz[l1PPZbW:_N^[:kQ]T1
 R7
 31
-R35
+R34
 !i10b 1
-R29
+R35
 Z46 !s90 -reportprogress|300|-93|-work|work|../../src/generic_laterial_shift.vhd|
 Z47 !s107 ../../src/generic_laterial_shift.vhd|
 !i113 0
@@ -311,9 +312,9 @@ V9AP9cDXO<F_4kESJ7YZzQ0
 !s100 Q?_1B?Q6LjkR=ND3j`Udm2
 R7
 31
-R35
+R34
 !i10b 1
-R29
+R35
 R46
 R47
 !i113 0
@@ -332,9 +333,9 @@ VV8H7]kOJkRNff3a]0BSdM2
 !s100 l2GeQPInz9OLEPT`29OVj3
 R7
 31
-R35
+R34
 !i10b 1
-R29
+R35
 Z51 !s90 -reportprogress|300|-93|-work|work|../../src/generic_nzero.vhd|
 Z52 !s107 ../../src/generic_nzero.vhd|
 !i113 0
@@ -350,9 +351,9 @@ VZY[TZX`@89LLg>@SFN9DO2
 !s100 1@WC]Mb26gF>2`FUUfdi@3
 R7
 31
-R35
+R34
 !i10b 1
-R29
+R35
 R51
 R52
 !i113 0
@@ -374,7 +375,7 @@ R7
 31
 R19
 !i10b 1
-Z57 !s108 1669656669.000000
+Z57 !s108 1670767600.000000
 Z58 !s90 -reportprogress|300|-93|-work|work|../../src/rom/instructions.vhd|
 Z59 !s107 ../../src/rom/instructions.vhd|
 !i113 0
@@ -496,9 +497,9 @@ V=_`GzzQ_?7jIi=SegNXFg2
 !s100 Y[RCLYK<T>=R>jgcil>SD1
 R7
 31
-R35
+R34
 !i10b 1
-R29
+R35
 Z74 !s90 -reportprogress|300|-93|-work|work|../../src/program_counter/src/program_counter.vhd|
 Z75 !s107 ../../src/program_counter/src/program_counter.vhd|
 !i113 0
@@ -514,9 +515,9 @@ VD]h2:BXQd2SPW2<Z7O`0A2
 !s100 [CY4KdjK4K2hU7WbAYNJ71
 R7
 31
-R35
+R34
 !i10b 1
-R29
+R35
 R74
 R75
 !i113 0
@@ -574,9 +575,9 @@ V>gz;8C[Kom88YPngL@[R70
 !s100 lKTd95kbgLl6@?Aog=ebV2
 R7
 31
-R35
+R34
 !i10b 1
-R29
+R35
 Z84 !s90 -reportprogress|300|-93|-work|work|../../src/display/src/seven_seg/src/seven_seg.vhd|
 Z85 !s107 ../../src/display/src/seven_seg/src/seven_seg.vhd|
 !i113 0
@@ -592,9 +593,9 @@ V<VUSzFLMYWQ17:jneD7Tb2
 !s100 8d5JSYz;;02BSj:<E<bJe3
 R7
 31
-R35
+R34
 !i10b 1
-R29
+R35
 R84
 R85
 !i113 0
@@ -696,7 +697,7 @@ VM6P>KAQL:9Yd4F3<_o3N>3
 !s100 Nl7`J1g3O:T=2WJ[N_5gj3
 R7
 31
-Z99 !s110 1669656673
+Z99 !s110 1670767604
 !i10b 1
 R9
 Z100 !s90 -reportprogress|300|-93|-work|work|../src/top_tb.vhd|
@@ -708,11 +709,11 @@ Aarch
 R2
 R3
 R4
-DEx4 work 6 top_tb 0 22 M6P>KAQL:9Yd4F3<_o3N>3
+Z102 DEx4 work 6 top_tb 0 22 M6P>KAQL:9Yd4F3<_o3N>3
 l37
 L12
-V3D>cTS>D4ii?4MOd1EXhR1
-!s100 d@[35Zm1@TV_7GDYZMLbi0
+Z103 V3D>cTS>D4ii?4MOd1EXhR1
+Z104 !s100 d@[35Zm1@TV_7GDYZMLbi0
 R7
 31
 R99

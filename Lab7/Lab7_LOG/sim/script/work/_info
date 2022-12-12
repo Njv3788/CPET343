@@ -1,0 +1,539 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dS:/Documents/CPET343/Lab7/Lab7_LOG/sim/script
+T_opt
+Z1 !s110 1670767872
+V0aIeDb[M`_mX]Rz1ZFYB92
+04 6 4 work top_tb arch 1
+=1-00be438d9921-6395e500-144-30f8
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+Ealu
+Z2 w1666647062
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z6 8../../src/calculator/src/alu.vhd
+Z7 F../../src/calculator/src/alu.vhd
+l0
+L9
+VEF8jO9c]L6;C7dFDg2JZi0
+!s100 jHZ7ZS2I3L4<m8`6PdFjK2
+Z8 OL;C;2019.2;69
+31
+Z9 !s110 1670767871
+!i10b 1
+Z10 !s108 1670767871.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|../../src/calculator/src/alu.vhd|
+Z12 !s107 ../../src/calculator/src/alu.vhd|
+!i113 0
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abeh
+R3
+R4
+R5
+DEx4 work 3 alu 0 22 EF8jO9c]L6;C7dFDg2JZi0
+l24
+L20
+VXY_iMLdJi4DIa5^PoWoG^2
+!s100 _4a86DLmj3FWTMmE=P7j[0
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Ecalculator
+Z15 w1666716350
+R4
+R5
+R0
+Z16 8../../src/calculator/src/calculator.vhd
+Z17 F../../src/calculator/src/calculator.vhd
+l0
+L8
+VYZ3OMPF6c];0B0^?hL^kR2
+!s100 k;AJ5;0=2D3Fn0dkh>d_;2
+R8
+31
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|../../src/calculator/src/calculator.vhd|
+Z19 !s107 ../../src/calculator/src/calculator.vhd|
+!i113 0
+R13
+R14
+Abeh
+R4
+R5
+DEx4 work 10 calculator 0 22 YZ3OMPF6c];0B0^?hL^kR2
+l77
+L22
+V_3a7Gm50LaR9=VSUBS8KT3
+!s100 zc2R7`YohH_i^o919hY?22
+R8
+31
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 0
+R13
+R14
+Edisplay
+Z20 w1666718292
+R4
+R5
+R0
+Z21 8../../src/display/src/display.vhd
+Z22 F../../src/display/src/display.vhd
+l0
+L8
+VW@A;R0I5ljd7>[lVgE57z0
+!s100 WnHM^5DbEU5Go`P;bCRFd2
+R8
+31
+R9
+!i10b 1
+R10
+Z23 !s90 -reportprogress|300|-93|-work|work|../../src/display/src/display.vhd|
+Z24 !s107 ../../src/display/src/display.vhd|
+!i113 0
+R13
+R14
+Abeh
+R4
+R5
+DEx4 work 7 display 0 22 W@A;R0I5ljd7>[lVgE57z0
+l49
+L22
+VdmP6QnDi^Xl6o@kXEePiz3
+!s100 28kI5Nz[QkM:GdKahXPMo0
+R8
+31
+R9
+!i10b 1
+R10
+R23
+R24
+!i113 0
+R13
+R14
+Edouble_dabble
+Z25 w1666040648
+R3
+R4
+R5
+R0
+Z26 8../../src/display/src/double_dabble.vhd
+Z27 F../../src/display/src/double_dabble.vhd
+l0
+L9
+VC;=P[k1QiQZXK;0OU_z;a0
+!s100 BiifH]I<ge5MiP@Bj]mn12
+R8
+31
+R9
+!i10b 1
+R10
+Z28 !s90 -reportprogress|300|-93|-work|work|../../src/display/src/double_dabble.vhd|
+Z29 !s107 ../../src/display/src/double_dabble.vhd|
+!i113 0
+R13
+R14
+Abeh
+R3
+R4
+R5
+DEx4 work 13 double_dabble 0 22 C;=P[k1QiQZXK;0OU_z;a0
+l24
+L21
+VTJ2KDlaXS4_JWU6gF3@6K2
+!s100 [Gh:_``DBU1O1_I_JR=dj3
+R8
+31
+R9
+!i10b 1
+R10
+R28
+R29
+!i113 0
+R13
+R14
+Egeneric_adder_beh
+Z30 w1664408181
+R3
+R4
+R5
+R0
+Z31 8../../src/program_counter/src/generic_adder_beh/src/generic_adder_beh.vhd
+Z32 F../../src/program_counter/src/generic_adder_beh/src/generic_adder_beh.vhd
+l0
+L9
+VZM:m22W6n_OU0[flII;@<2
+!s100 OOaH7j]OJo2FNLlk`2n1j2
+R8
+31
+Z33 !s110 1670767870
+!i10b 1
+Z34 !s108 1670767870.000000
+Z35 !s90 -reportprogress|300|-93|-work|work|../../src/program_counter/src/generic_adder_beh/src/generic_adder_beh.vhd|
+Z36 !s107 ../../src/program_counter/src/generic_adder_beh/src/generic_adder_beh.vhd|
+!i113 0
+R13
+R14
+Abeh
+R3
+R4
+R5
+DEx4 work 17 generic_adder_beh 0 22 ZM:m22W6n_OU0[flII;@<2
+l27
+L22
+VXiACzM[7Kd];V;iL`X2`K1
+!s100 J0QDzX5NX;aLCSO9EOMGC0
+R8
+31
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 0
+R13
+R14
+Einstructions
+Z37 w1667831045
+Z38 DPx9 altera_mf 20 altera_mf_components 0 22 THelGI^EL^_c1RBok5T_I0
+R4
+R5
+R0
+Z39 8../../src/rom/instructions.vhd
+Z40 F../../src/rom/instructions.vhd
+l0
+L42
+VOhKnDJST5WgajBfm]h[io2
+!s100 0E4G1TY[P38BA:n6i_lS;2
+R8
+31
+R33
+!i10b 1
+Z41 !s108 1670767869.000000
+Z42 !s90 -reportprogress|300|-93|-work|work|../../src/rom/instructions.vhd|
+Z43 !s107 ../../src/rom/instructions.vhd|
+!i113 0
+R13
+R14
+Asyn
+R38
+R4
+R5
+DEx4 work 12 instructions 0 22 OhKnDJST5WgajBfm]h[io2
+l56
+L52
+VWREId8HFjQU3SB2CkaV3l0
+!s100 n`S9eN_gUf92hN:mlDKU@3
+R8
+31
+R33
+!i10b 1
+R41
+R42
+R43
+!i113 0
+R13
+R14
+Ememory
+Z44 w1666202400
+R3
+R4
+R5
+R0
+Z45 8../../src/calculator/src/memory/src/memory.vhd
+Z46 F../../src/calculator/src/memory/src/memory.vhd
+l0
+L9
+VAPZk@V8U=cYhMD??zlP7[0
+!s100 NeWb[N5ARR?JDfz@```G?3
+R8
+31
+R9
+!i10b 1
+R10
+Z47 !s90 -reportprogress|300|-93|-work|work|../../src/calculator/src/memory/src/memory.vhd|
+Z48 !s107 ../../src/calculator/src/memory/src/memory.vhd|
+!i113 0
+R13
+R14
+Abeh
+R3
+R4
+R5
+DEx4 work 6 memory 0 22 APZk@V8U=cYhMD??zlP7[0
+l26
+L21
+VLKo4zSa>39@galUVKS>I>2
+!s100 2dXD[Ri1k1_[8z2YL:M^i2
+R8
+31
+R9
+!i10b 1
+R10
+R47
+R48
+!i113 0
+R13
+R14
+Eprogram_counter
+Z49 w1668015964
+R4
+R5
+R0
+Z50 8../../src/program_counter/src/program_counter.vhd
+Z51 F../../src/program_counter/src/program_counter.vhd
+l0
+L8
+V=_`GzzQ_?7jIi=SegNXFg2
+!s100 Y[RCLYK<T>=R>jgcil>SD1
+R8
+31
+R33
+!i10b 1
+R34
+Z52 !s90 -reportprogress|300|-93|-work|work|../../src/program_counter/src/program_counter.vhd|
+Z53 !s107 ../../src/program_counter/src/program_counter.vhd|
+!i113 0
+R13
+R14
+Abeh
+R4
+R5
+DEx4 work 15 program_counter 0 22 =_`GzzQ_?7jIi=SegNXFg2
+l43
+L21
+VD]h2:BXQd2SPW2<Z7O`0A2
+!s100 [CY4KdjK4K2hU7WbAYNJ71
+R8
+31
+R33
+!i10b 1
+R34
+R52
+R53
+!i113 0
+R13
+R14
+Erising_edge_synchronizer
+Z54 w1666040171
+R4
+R5
+R0
+Z55 8../../src/rising_edge_synchronizer.vhd
+Z56 F../../src/rising_edge_synchronizer.vhd
+l0
+L8
+V7^gf[0AcMz;oFDKIj=b3N3
+!s100 8>=9Tc6dAVdENebjXiG<30
+R8
+31
+R33
+!i10b 1
+R34
+Z57 !s90 -reportprogress|300|-93|-work|work|../../src/rising_edge_synchronizer.vhd|
+Z58 !s107 ../../src/rising_edge_synchronizer.vhd|
+!i113 0
+R13
+R14
+Abeh
+R4
+R5
+DEx4 work 24 rising_edge_synchronizer 0 22 7^gf[0AcMz;oFDKIj=b3N3
+l23
+L17
+V3[Zc:cd7cKK`Uk6V^JOA[0
+!s100 @e1I9@Enc4[;L5b`c?VdR2
+R8
+31
+R33
+!i10b 1
+R34
+R57
+R58
+!i113 0
+R13
+R14
+Eseven_seg
+Z59 w1666040735
+R4
+R5
+R0
+Z60 8../../src/display/src/seven_seg/src/seven_seg.vhd
+Z61 F../../src/display/src/seven_seg/src/seven_seg.vhd
+l0
+L8
+V>gz;8C[Kom88YPngL@[R70
+!s100 lKTd95kbgLl6@?Aog=ebV2
+R8
+31
+R9
+!i10b 1
+R34
+Z62 !s90 -reportprogress|300|-93|-work|work|../../src/display/src/seven_seg/src/seven_seg.vhd|
+Z63 !s107 ../../src/display/src/seven_seg/src/seven_seg.vhd|
+!i113 0
+R13
+R14
+Abeh
+R4
+R5
+DEx4 work 9 seven_seg 0 22 >gz;8C[Kom88YPngL@[R70
+l18
+L17
+V<VUSzFLMYWQ17:jneD7Tb2
+!s100 8d5JSYz;;02BSj:<E<bJe3
+R8
+31
+R9
+!i10b 1
+R34
+R62
+R63
+!i113 0
+R13
+R14
+Estate_machine
+Z64 w1666809887
+R4
+R5
+R0
+Z65 8../../src/calculator/src/State_machine.vhd
+Z66 F../../src/calculator/src/State_machine.vhd
+l0
+L8
+V:Yd?llXQkbm6JFz7h8]kM3
+!s100 WgeRT45_WC[R0@;S7XQHM2
+R8
+31
+R9
+!i10b 1
+R10
+Z67 !s90 -reportprogress|300|-93|-work|work|../../src/calculator/src/State_machine.vhd|
+Z68 !s107 ../../src/calculator/src/State_machine.vhd|
+!i113 0
+R13
+R14
+Abeh
+R4
+R5
+DEx4 work 13 state_machine 0 22 :Yd?llXQkbm6JFz7h8]kM3
+l44
+L22
+V]hj^XIjb=VCn7AMb9WC=b2
+!s100 ccGEPnL5>c9kZ@?Znh?;o1
+R8
+31
+R9
+!i10b 1
+R10
+R67
+R68
+!i113 0
+R13
+R14
+Etop
+Z69 w1669671089
+R4
+R5
+R0
+Z70 8../../src/top.vhd
+Z71 F../../src/top.vhd
+l0
+L8
+VZ;1GWh2?z0:]DH`21F=E[3
+!s100 >kF36:ZlmALiN8=l_h>CD1
+R8
+31
+R33
+!i10b 1
+R34
+Z72 !s90 -reportprogress|300|-93|-work|work|../../src/top.vhd|
+Z73 !s107 ../../src/top.vhd|
+!i113 0
+R13
+R14
+Abeh
+R4
+R5
+DEx4 work 3 top 0 22 Z;1GWh2?z0:]DH`21F=E[3
+l107
+L20
+VTcz33P6O4_8UA^FKbXZ3>2
+!s100 d?zK:g88V[jB[eWTM@glj2
+R8
+31
+R33
+!i10b 1
+R34
+R72
+R73
+!i113 0
+R13
+R14
+Etop_tb
+Z74 w1667407532
+R3
+R4
+R5
+R0
+Z75 8../src/top_tb.vhd
+Z76 F../src/top_tb.vhd
+l0
+L9
+VM6P>KAQL:9Yd4F3<_o3N>3
+!s100 Nl7`J1g3O:T=2WJ[N_5gj3
+R8
+31
+R1
+!i10b 1
+R10
+Z77 !s90 -reportprogress|300|-93|-work|work|../src/top_tb.vhd|
+Z78 !s107 ../src/top_tb.vhd|
+!i113 0
+R13
+R14
+Aarch
+R3
+R4
+R5
+DEx4 work 6 top_tb 0 22 M6P>KAQL:9Yd4F3<_o3N>3
+l37
+L12
+V]GGWk`PeIDOdA2em<1`do3
+!s100 Mg:gD<EN[2@[<a^?2:iWg2
+R8
+31
+R1
+!i10b 1
+R10
+R77
+R78
+!i113 0
+R13
+R14
