@@ -28,9 +28,46 @@ architecture beh of dj_roomba_3000 is
     );
   end component;
   
+  component rising_edge_synchronizer is 
+    port (
+      clk               : in std_logic;
+      reset             : in std_logic;
+      input             : in std_logic;
+      edge              : out std_logic
+    );
+  end component;
+
+  
   signal data_address  : std_logic_vector(13 downto 0);
   signal instruction   : std_logic_vector(7 downto 0);
+  signal execute_sync  :std_logic;
 begin
+  
+  wtf:rising_edge_synchronizer 
+    port map(
+      clk            => clk,
+      reset          => reset,
+      input          => execute_btn,
+      edge           => execute_sync
+    );
+
+  head:controller
+    port map(
+      clk             => clk,
+      reset           => reset,
+      execute_btn     => execute_sync,
+      instruction     => instruction
+    );  
+  
+  corpus:processor
+    port map(
+      clk             => clk,
+      reset           => reset,
+      sync            => sync,
+      instruction     => instruction,
+      address         => data_address
+    );
+    
   -- data instantiation
   u_rom_data_inst : rom_data
     port map (
@@ -38,34 +75,5 @@ begin
       clock      => clk,
       q          => audio_out
     );
-  
-  -- loop audio file
-  process(clk,reset)
-  begin 
-    if (reset = '1') then 
-      data_address <= (others => '0');
-    elsif (clk'event and clk = '1') then
-      if (sync = '1') then    
-        data_address <= std_logic_vector(unsigned(data_address) + 1 );
-      end if;
-    end if;
-  end process;
-
-  head :controller
-    port map(
-      clk             => clk,
-      reset           => reset,
-      execute_btn     => execute_btn,
-      instruction     => instruction
-    );  
-  
-  corpus :processor
-    port map(
-      clk             => clk,
-      reset           => reset,
-      sync            => sync,
-      instruction     => instruction
-    );  
-  
   led <= instruction;
 end beh;

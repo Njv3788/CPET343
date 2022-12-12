@@ -6,6 +6,8 @@ vcom -93 -work work ../../src/controller/generic_laterial_shift.vhd
 vcom -93 -work work ../../src/controller/generic_nzero.vhd
 vcom -93 -work work ../../src/controller/machine.vhd
 vcom -93 -work work ../../src/controller/controller.vhd
+vcom -93 -work work ../../src/program_counter/src/program_counter.vhd
+vcom -93 -work work ../../src/program_counter/src/generic_adder_beh/src/generic_adder_beh.vhd
 vcom -93 -work work ../../src/processor/pro_parts.vhd
 vcom -93 -work work ../../src/processor/processor.vhd
 vcom -93 -work work ../../src/processor/pro_machine.vhd
@@ -16,4 +18,4 @@ vcom -93 -work work ../../src/dj_roomba_3000.vhd
 vcom -93 -work work ../src/dj_roomba_3000_tb.vhd
 vsim -voptargs=+acc dj_roomba_3000_tb
 do wave.do
-run 2 us
+run 16 us

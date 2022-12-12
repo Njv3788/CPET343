@@ -10,7 +10,9 @@ entity pro_machine is
   port (
     clk             : in  std_logic; 
     reset           : in  std_logic;
+    is_end          : in  std_logic;
     instruction     : in  std_logic_vector (7 downto 0);
+    command         : out std_logic_vector (1 downto 0);
     pro_state       : out std_logic_vector (4 downto 0)
   );  
 end; 
@@ -21,6 +23,7 @@ architecture beh of pro_machine is
   
   alias CMD                   :std_logic_vector is instruction(7 downto 6);
   alias RPT                   :std_logic is instruction(5);
+
  
   constant play               :std_logic_vector(4 downto 0) := "00001";
   constant repeat             :std_logic_vector(4 downto 0) := "00010";
@@ -56,6 +59,28 @@ begin
         next_state <= stop;
       when others  =>
         next_state <= stop;
+    end case;
+  end process;
+  
+  process(current_state,is_end)
+  begin
+    case current_state is 
+      when play   =>
+        if is_end = '1' then 
+          command <= "11";
+        else
+          command <= "01";
+        end if;
+      when repeat =>
+        command <= "01";
+      when pause  =>
+        command <= "00";
+      when seek   =>
+        command <= "10";
+      when stop   =>
+        command <= "11";
+      when others => 
+        command <= "00";
     end case;
   end process;
   

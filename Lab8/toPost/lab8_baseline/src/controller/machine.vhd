@@ -108,7 +108,8 @@ begin
   
   is_zero:generic_nzero
     generic map (
-      bits => 5    )
+      bits => 5
+      )
     port map (
       sel             => instruction(4 downto 0),
       output          => n_zero

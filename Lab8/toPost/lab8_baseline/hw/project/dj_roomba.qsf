@@ -18,7 +18,7 @@
 #
 # Quartus Prime
 # Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-# Date created = 16:13:37  November 21, 2022
+# Date created = 08:13:28  December 12, 2022
 #
 # -------------------------------------------------------------------------- #
 #
@@ -40,7 +40,7 @@ set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:13:37  NOVEMBER 21, 2022"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:13:28  DECEMBER 12, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY ../output_files
 set_global_assignment -name QIP_FILE ../../src/rom_data/rom_data.qip
@@ -58,6 +58,18 @@ set_global_assignment -name VERILOG_FILE ../../src/audio_ip/Altera_UP_SYNC_FIFO.
 set_global_assignment -name VERILOG_FILE ../../src/audio_ip/audio_and_video_config.v
 set_global_assignment -name VERILOG_FILE ../../src/audio_ip/audio_codec.v
 set_global_assignment -name VERILOG_FILE ../../src/audio_ip/clock_generator.v
+set_global_assignment -name VHDL_FILE ../../src/controller/control_parts.vhd
+set_global_assignment -name VHDL_FILE ../../src/controller/generic_2x1_mux.vhd
+set_global_assignment -name VHDL_FILE ../../src/controller/generic_laterial_shift.vhd
+set_global_assignment -name VHDL_FILE ../../src/controller/generic_nzero.vhd
+set_global_assignment -name VHDL_FILE ../../src/controller/machine.vhd
+set_global_assignment -name VHDL_FILE ../../src/controller/controller.vhd
+set_global_assignment -name VHDL_FILE ../../src/program_counter/src/program_counter.vhd
+set_global_assignment -name VHDL_FILE ../../src/program_counter/src/generic_adder_beh/src/generic_adder_beh.vhd
+set_global_assignment -name VHDL_FILE ../../src/processor/pro_parts.vhd
+set_global_assignment -name VHDL_FILE ../../src/processor/processor.vhd
+set_global_assignment -name VHDL_FILE ../../src/processor/pro_machine.vhd
+set_global_assignment -name VHDL_FILE ../../src/rom_data/rom_data.vhd
 set_global_assignment -name VHDL_FILE ../../src/rising_edge_synchronizer.vhd
 set_global_assignment -name VHDL_FILE ../../src/generic_counter.vhd
 set_global_assignment -name VHDL_FILE ../../src/dj_roomba_3000.vhd
