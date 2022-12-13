@@ -1,5 +1,5 @@
 Fitter report for audio_processor
-Mon Nov 21 16:16:58 2022
+Mon Dec 12 13:46:47 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Mon Nov 21 16:16:58 2022           ;
+; Fitter Status                   ; Successful - Mon Dec 12 13:46:47 2022           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; audio_processor                                 ;
 ; Top-level Entity Name           ; top                                             ;
@@ -3132,7 +3132,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:08
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:10
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:06
@@ -3145,19 +3145,19 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.96 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.97 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file S:/Documents/CPET343/Lab8/toPost/baseline_oldTools/hw/output_files/audio_processor.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 246 warnings
-    Info: Peak virtual memory: 7413 megabytes
-    Info: Processing ended: Mon Nov 21 16:17:00 2022
-    Info: Elapsed time: 00:00:43
-    Info: Total CPU time (on all processors): 00:02:32
+    Info: Peak virtual memory: 7406 megabytes
+    Info: Processing ended: Mon Dec 12 13:46:50 2022
+    Info: Elapsed time: 00:00:44
+    Info: Total CPU time (on all processors): 00:02:38
 
 
 +----------------------------+

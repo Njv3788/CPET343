@@ -1,5 +1,5 @@
 Timing Analyzer report for audio_processor
-Mon Nov 21 16:17:22 2022
+Mon Dec 12 13:47:11 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -106,15 +106,15 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.1%      ;
+;     Processor 2            ;   3.2%      ;
 ;     Processor 3            ;   3.1%      ;
-;     Processor 4            ;   3.0%      ;
-;     Processor 5            ;   2.9%      ;
-;     Processor 6            ;   2.9%      ;
-;     Processor 7            ;   2.9%      ;
-;     Processor 8            ;   2.9%      ;
-;     Processor 9            ;   2.9%      ;
-;     Processor 10           ;   2.9%      ;
+;     Processor 4            ;   3.1%      ;
+;     Processor 5            ;   3.0%      ;
+;     Processor 6            ;   3.0%      ;
+;     Processor 7            ;   3.0%      ;
+;     Processor 8            ;   3.0%      ;
+;     Processor 9            ;   3.0%      ;
+;     Processor 10           ;   3.0%      ;
 +----------------------------+-------------+
 
 
@@ -642,7 +642,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Nov 21 16:17:11 2022
+    Info: Processing started: Mon Dec 12 13:47:01 2022
 Info: Command: quartus_sta audio_processor -c audio_processor
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -768,9 +768,9 @@ Info (332146): Worst-case minimum pulse width slack is 15.063
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 5301 megabytes
-    Info: Processing ended: Mon Nov 21 16:17:22 2022
-    Info: Elapsed time: 00:00:11
+    Info: Peak virtual memory: 5292 megabytes
+    Info: Processing ended: Mon Dec 12 13:47:11 2022
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:10
 
 

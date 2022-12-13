@@ -67,7 +67,7 @@ begin
     case current_state is 
       when play   =>
         if is_end = '1' then 
-          command <= "11";
+          command <= "00";
         else
           command <= "01";
         end if;

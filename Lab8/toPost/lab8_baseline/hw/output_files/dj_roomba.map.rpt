@@ -1,5 +1,5 @@
 Analysis & Synthesis report for dj_roomba
-Mon Dec 12 08:13:52 2022
+Mon Dec 12 13:51:59 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -103,7 +103,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Dec 12 08:13:52 2022           ;
+; Analysis & Synthesis Status     ; Successful - Mon Dec 12 13:51:59 2022           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; dj_roomba                                       ;
 ; Top-level Entity Name           ; top                                             ;
@@ -215,11 +215,11 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 24          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 16          ;
+; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
@@ -229,7 +229,7 @@ refer to the applicable agreement for further details.
 ;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
 ;     Processor 7            ;   0.0%      ;
-;     Processors 8-16        ;   0.0%      ;
+;     Processors 8-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -321,13 +321,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 385            ;
+; Estimate of Logic utilization (ALMs needed) ; 383            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 597            ;
+; Combinational ALUT usage for logic          ; 596            ;
 ;     -- 7 input functions                    ; 13             ;
-;     -- 6 input functions                    ; 108            ;
-;     -- 5 input functions                    ; 150            ;
-;     -- 4 input functions                    ; 65             ;
+;     -- 6 input functions                    ; 106            ;
+;     -- 5 input functions                    ; 149            ;
+;     -- 4 input functions                    ; 67             ;
 ;     -- <=3 input functions                  ; 261            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 497            ;
@@ -343,7 +343,7 @@ refer to the applicable agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 386            ;
-; Total fan-out                               ; 6110           ;
+; Total fan-out                               ; 6102           ;
 ; Average fan-out                             ; 4.94           ;
 +---------------------------------------------+----------------+
 
@@ -353,7 +353,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                             ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |top                                                                                                                                    ; 597 (2)             ; 497 (0)                   ; 268544            ; 0          ; 22   ; 0            ; |top                                                                                                                                                                                                                                                                                                                                            ; top                               ; work         ;
+; |top                                                                                                                                    ; 596 (2)             ; 497 (0)                   ; 268544            ; 0          ; 22   ; 0            ; |top                                                                                                                                                                                                                                                                                                                                            ; top                               ; work         ;
 ;    |audio_and_video_config:cfg|                                                                                                         ; 102 (2)             ; 65 (9)                    ; 0                 ; 0          ; 0    ; 0            ; |top|audio_and_video_config:cfg                                                                                                                                                                                                                                                                                                                 ; audio_and_video_config            ; work         ;
 ;       |Altera_UP_I2C:I2C_Controller|                                                                                                    ; 19 (19)             ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |top|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller                                                                                                                                                                                                                                                                                    ; Altera_UP_I2C                     ; work         ;
 ;       |Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|                                                                                ; 66 (66)             ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |top|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize                                                                                                                                                                                                                                                                ; Altera_UP_I2C_AV_Auto_Initialize  ; work         ;
@@ -395,7 +395,7 @@ refer to the applicable agreement for further details.
 ;    |clock_generator:my_clock_gen|                                                                                                       ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|clock_generator:my_clock_gen                                                                                                                                                                                                                                                                                                               ; clock_generator                   ; work         ;
 ;       |altpll:DE_Clock_Generator_Audio|                                                                                                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio                                                                                                                                                                                                                                                                               ; altpll                            ; work         ;
 ;          |altpll_1uu1:auto_generated|                                                                                                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio|altpll_1uu1:auto_generated                                                                                                                                                                                                                                                    ; altpll_1uu1                       ; work         ;
-;    |dj_roomba_3000:dj_roomba|                                                                                                           ; 176 (0)             ; 148 (0)                   ; 262400            ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba                                                                                                                                                                                                                                                                                                                   ; dj_roomba_3000                    ; work         ;
+;    |dj_roomba_3000:dj_roomba|                                                                                                           ; 175 (0)             ; 148 (0)                   ; 262400            ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba                                                                                                                                                                                                                                                                                                                   ; dj_roomba_3000                    ; work         ;
 ;       |controller:head|                                                                                                                 ; 61 (0)              ; 70 (0)                    ; 256               ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba|controller:head                                                                                                                                                                                                                                                                                                   ; controller                        ; work         ;
 ;          |generic_laterial_shift:decode_1|                                                                                              ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba|controller:head|generic_laterial_shift:decode_1                                                                                                                                                                                                                                                                   ; generic_laterial_shift            ; work         ;
 ;          |generic_laterial_shift:decode_2|                                                                                              ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba|controller:head|generic_laterial_shift:decode_2                                                                                                                                                                                                                                                                   ; generic_laterial_shift            ; work         ;
@@ -409,8 +409,8 @@ refer to the applicable agreement for further details.
 ;                   |altsyncram_92h2:altsyncram1|                                                                                         ; 0 (0)               ; 0 (0)                     ; 256               ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba|controller:head|rom_instructions:instructions_inst|altsyncram:altsyncram_component|altsyncram_ivh1:auto_generated|altsyncram_92h2:altsyncram1                                                                                                                                                                     ; altsyncram_92h2                   ; work         ;
 ;                   |sld_mod_ram_rom:mgl_prim2|                                                                                           ; 37 (20)             ; 32 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba|controller:head|rom_instructions:instructions_inst|altsyncram:altsyncram_component|altsyncram_ivh1:auto_generated|sld_mod_ram_rom:mgl_prim2                                                                                                                                                                       ; sld_mod_ram_rom                   ; work         ;
 ;                      |sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|                                                               ; 17 (17)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba|controller:head|rom_instructions:instructions_inst|altsyncram:altsyncram_component|altsyncram_ivh1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr                                                                                                                    ; sld_rom_sr                        ; work         ;
-;       |processor:corpus|                                                                                                                ; 34 (0)              ; 19 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba|processor:corpus                                                                                                                                                                                                                                                                                                  ; processor                         ; work         ;
-;          |pro_machine:change|                                                                                                           ; 13 (13)             ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba|processor:corpus|pro_machine:change                                                                                                                                                                                                                                                                               ; pro_machine                       ; work         ;
+;       |processor:corpus|                                                                                                                ; 33 (0)              ; 19 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba|processor:corpus                                                                                                                                                                                                                                                                                                  ; processor                         ; work         ;
+;          |pro_machine:change|                                                                                                           ; 12 (12)             ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba|processor:corpus|pro_machine:change                                                                                                                                                                                                                                                                               ; pro_machine                       ; work         ;
 ;          |program_counter:find_instructions|                                                                                            ; 21 (7)              ; 14 (14)                   ; 0                 ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba|processor:corpus|program_counter:find_instructions                                                                                                                                                                                                                                                                ; program_counter                   ; work         ;
 ;             |generic_adder_beh:add_1|                                                                                                   ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba|processor:corpus|program_counter:find_instructions|generic_adder_beh:add_1                                                                                                                                                                                                                                        ; generic_adder_beh                 ; work         ;
 ;       |rising_edge_synchronizer:wtf|                                                                                                    ; 2 (2)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |top|dj_roomba_3000:dj_roomba|rising_edge_synchronizer:wtf                                                                                                                                                                                                                                                                                      ; rising_edge_synchronizer          ; work         ;
@@ -565,7 +565,7 @@ Encoding Type:  One-Hot
 ; dj_roomba_3000:dj_roomba|controller:head|machine:change_top|current_state[0]                                                                                                                                                                                                                                                    ; 5       ;
 ; dj_roomba_3000:dj_roomba|rising_edge_synchronizer:wtf|input_zz                                                                                                                                                                                                                                                                  ; 2       ;
 ; dj_roomba_3000:dj_roomba|rising_edge_synchronizer:wtf|input_zzz                                                                                                                                                                                                                                                                 ; 1       ;
-; dj_roomba_3000:dj_roomba|processor:corpus|pro_machine:change|current_state[4]                                                                                                                                                                                                                                                   ; 3       ;
+; dj_roomba_3000:dj_roomba|processor:corpus|pro_machine:change|current_state[4]                                                                                                                                                                                                                                                   ; 2       ;
 ; dj_roomba_3000:dj_roomba|rising_edge_synchronizer:wtf|input_z                                                                                                                                                                                                                                                                   ; 1       ;
 ; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[1] ; 3       ;
 ; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[2] ; 3       ;
@@ -1776,20 +1776,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SCLR              ; 62                          ;
 ;     plain             ; 40                          ;
 ; arriav_io_obuf        ; 1                           ;
-; arriav_lcell_comb     ; 495                         ;
+; arriav_lcell_comb     ; 494                         ;
 ;     arith             ; 107                         ;
 ;         1 data inputs ; 83                          ;
 ;         2 data inputs ; 24                          ;
 ;     extend            ; 11                          ;
 ;         7 data inputs ; 11                          ;
-;     normal            ; 358                         ;
+;     normal            ; 357                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 19                          ;
-;         2 data inputs ; 33                          ;
-;         3 data inputs ; 46                          ;
-;         4 data inputs ; 55                          ;
-;         5 data inputs ; 119                         ;
-;         6 data inputs ; 85                          ;
+;         2 data inputs ; 32                          ;
+;         3 data inputs ; 47                          ;
+;         4 data inputs ; 57                          ;
+;         5 data inputs ; 118                         ;
+;         6 data inputs ; 83                          ;
 ;     shared            ; 19                          ;
 ;         1 data inputs ; 19                          ;
 ; boundary_port         ; 76                          ;
@@ -1847,10 +1847,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Dec 12 08:13:29 2022
+    Info: Processing started: Mon Dec 12 13:51:30 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dj_roomba -c dj_roomba
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file /documents/cpet343/lab8/topost/lab8_baseline/src/rom_data/rom_data.vhd
     Info (12022): Found design unit 1: rom_data-SYN File: S:/Documents/CPET343/Lab8/toPost/lab8_baseline/src/rom_data/rom_data.vhd Line: 53
     Info (12023): Found entity 1: rom_data File: S:/Documents/CPET343/Lab8/toPost/lab8_baseline/src/rom_data/rom_data.vhd Line: 43
@@ -2180,7 +2180,7 @@ Info (12128): Elaborating entity "cntr_i2b" for hierarchy "audio_codec:codec|Alt
 Info (12128): Elaborating entity "Altera_UP_Audio_Out_Serializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer" File: S:/Documents/CPET343/Lab8/toPost/lab8_baseline/src/audio_ip/audio_codec.v Line: 267
 Warning (12030): Port "clk" on the entity instantiation of "DE_Clock_Generator_Audio" is connected to a signal of width 1. The formal width of the signal in the module is 6.  The extra bits will be left dangling without any fan-out logic. File: S:/Documents/CPET343/Lab8/toPost/lab8_baseline/src/audio_ip/clock_generator.v Line: 134
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2022.12.12.08:13:43 Progress: Loading sld0ef9f1e8/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2022.12.12.13:51:48 Progress: Loading sld0ef9f1e8/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -2267,17 +2267,17 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 16 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "AUD_ADCDAT" File: S:/Documents/CPET343/Lab8/toPost/lab8_baseline/src/top.vhd Line: 12
-Info (21057): Implemented 851 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 850 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 14 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 735 logic cells
+    Info (21061): Implemented 734 logic cells
     Info (21064): Implemented 88 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 69 warnings
-    Info: Peak virtual memory: 4983 megabytes
-    Info: Processing ended: Mon Dec 12 08:13:53 2022
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 4963 megabytes
+    Info: Processing ended: Mon Dec 12 13:51:59 2022
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:39
 
 
