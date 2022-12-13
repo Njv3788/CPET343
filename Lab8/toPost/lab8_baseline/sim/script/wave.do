@@ -33,6 +33,7 @@ add wave -noupdate -radix Top_States /dj_roomba_3000_tb/dj_roomba/head/state
 add wave -noupdate -radix States /dj_roomba_3000_tb/dj_roomba/led
 add wave -noupdate -radix Pro_States /dj_roomba_3000_tb/dj_roomba/corpus/pro_state
 add wave -noupdate /dj_roomba_3000_tb/dj_roomba/corpus/command_sync
+add wave -noupdate /dj_roomba_3000_tb/dj_roomba/corpus/is_end
 add wave -noupdate /dj_roomba_3000_tb/dj_roomba/audio_out
 add wave -noupdate /dj_roomba_3000_tb/dj_roomba/data_address
 TreeUpdate [SetDefaultTree]

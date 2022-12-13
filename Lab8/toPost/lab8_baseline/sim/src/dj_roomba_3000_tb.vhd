@@ -60,12 +60,25 @@ main: process
   begin
     report "****************** TB Start ****************" severity note;
     
-    for i in 0 to 256 loop
+    for i in 0 to 8192 loop
       wait for 100 ns;     
       sync <= not sync;
-      execute_btn <= not execute_btn;
+      if i < 64 then
+       execute_btn <= not execute_btn;
+      end if;
     end loop;
     
+    sync <= '0';
+    wait for 100 ns; 
+    execute_btn <= not execute_btn;
+    wait for 100 ns; 
+    execute_btn <= not execute_btn;
+    wait for 1000 ns;     
+    
+    for i in 0 to 8192 loop
+      wait for 100 ns;     
+      sync <= not sync;
+    end loop;
     report "****************** TB Finish ****************" severity note;
     wait;
   end process; 
